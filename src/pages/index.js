@@ -29,6 +29,8 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
+          const { date, description, tags } = post.frontmatter
+          const tagList = tags.split(' ')
 
           return (
             <li key={post.fields.slug}>
@@ -43,16 +45,36 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small>{date}</small>
                 </header>
                 <section>
                   <p
                     dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
+                      __html: description || post.excerpt,
                     }}
                     itemProp="description"
                   />
                 </section>
+                <small>
+                {tagList.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="tag"
+                      style={{
+                        border: '2px solid #0b4216',
+                        color: '#0b4216',
+                        borderRadius: '10px', // Example radius
+                        padding: '5px 5px',
+                        marginTop: '10px',
+                        marginRight: '10px',
+                        display: 'inline-block',
+                        fontSize: '0.8em',
+                      }}
+                    >
+                    {tag}
+                  </span>
+                ))}
+                </small>
               </article>
               <HorizontalLine />
             </li>
@@ -89,6 +111,7 @@ export const pageQuery = graphql`
           date(formatString: "YYYY년 MM월 DD일")
           title
           description
+          tags
         }
       }
     }

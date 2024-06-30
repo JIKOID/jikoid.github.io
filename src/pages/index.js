@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import HorizontalLine from "../components/horizontal_line"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -53,6 +54,7 @@ const BlogIndex = ({ data, location }) => {
                   />
                 </section>
               </article>
+              <HorizontalLine />
             </li>
           )
         })}
@@ -84,7 +86,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYY년 MM월 DD일")
           title
           description
         }

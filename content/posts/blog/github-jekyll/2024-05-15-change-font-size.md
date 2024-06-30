@@ -1,4 +1,5 @@
 ---
+date: "2024-05-15"
 title: "Github 블로그 폰트 사이즈 변경하기 (Minimal Mistakes)"
 tags: github minimal_mistakes
 categories: blog github_jekyll

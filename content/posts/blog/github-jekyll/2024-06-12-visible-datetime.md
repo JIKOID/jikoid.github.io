@@ -1,4 +1,5 @@
 ---
+date: "2024-06-12"
 title: "Github 블로그 시간 표시하기 (Minimal Mistakes)"
 tags: github minimal_mistakes datetime
 categories: blog github_jekyll

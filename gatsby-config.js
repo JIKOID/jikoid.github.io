@@ -7,15 +7,19 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+const blogConfig = require("./blog-config")
+const { title, summary, description, author, siteUrl } = blogConfig
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: title,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: author,
+      summary: summary,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: description,
+    siteUrl: siteUrl,
     social: {
       twitter: `kylemathews`,
     },
@@ -25,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/posts`,
+        name: `posts`,
       },
     },
     {
@@ -118,7 +122,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/avatar.png`, // This path is relative to the root of the site.
       },
     },
   ],

@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { author } from "../../blog-config"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -20,7 +21,7 @@ const BlogPostTemplate = ({
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p> <b>@{author}</b> · {post.frontmatter.date} </p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -89,7 +90,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY년 MM월 DD일")
         description
       }
     }

@@ -3,7 +3,6 @@ date: "2024-06-12"
 title: "Github 블로그 toc 변경하기 (Minimal Mistakes)"
 tags: github minimal_mistakes toc
 categories: blog github_jekyll
-layout: single
 author_profile: true
 toc: true
 toc_sticky: true
@@ -80,8 +79,8 @@ $toc-title-color: #205b2c !default;
 <br>
 
 - 변경 전  
-<img width="301" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/3720efb4-6580-4973-965c-836b4b2e1fb1">
+<img width="301" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/3720efb4-6580-4973-965c-836b4b2e1fb1">
 <br>
 
 - 변경 후  
-<img width="299" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/a63cd749-d46a-45e3-99dd-da4caf3416a9">
+<img width="299" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/a63cd749-d46a-45e3-99dd-da4caf3416a9">

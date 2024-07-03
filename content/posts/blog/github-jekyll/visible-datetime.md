@@ -3,7 +3,6 @@ date: "2024-06-12"
 title: "Github 블로그 시간 표시하기 (Minimal Mistakes)"
 tags: github minimal_mistakes datetime
 categories: blog github_jekyll
-layout: single
 author_profile: true
 toc: true
 toc_sticky: true
@@ -19,13 +18,11 @@ show_date: true
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/42a24a6c-add6-4ca5-9315-e6535fe008c9">
+<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/42a24a6c-add6-4ca5-9315-e6535fe008c9">
 
 <br><br>
 
 그래서 시간이 표시되도록 수정해보려고 한다.
-
-<br>
 
 ## 읽는 시간을 표시해주는 소스 찾기
 
@@ -104,7 +101,7 @@ show_date: true
 그리고 다시 확인해보니 잘 적용된 것을 확인할 수 있었다.
 <br>
 
-<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/8880adf5-7bed-4e43-84a1-0708aeb37979">
+<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/8880adf5-7bed-4e43-84a1-0708aeb37979">
 
 <br><br>
 

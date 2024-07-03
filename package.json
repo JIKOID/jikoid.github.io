@@ -32,6 +32,7 @@
     "require": "^2.4.20"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "prettier": "^2.8.8"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -44,8 +45,9 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "gatsby build && gh-pages -d public -b main",
+    "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",

@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HorizontalLine from "../components/horizontal_line"
+import TagList from "../components/tag_list"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -30,7 +31,6 @@ const BlogIndex = ({ data, location }) => {
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const { date, description, tags } = post.frontmatter
-          const tagList = tags.split(' ')
 
           return (
             <li key={post.fields.slug}>
@@ -55,26 +55,7 @@ const BlogIndex = ({ data, location }) => {
                     itemProp="description"
                   />
                 </section>
-                <small>
-                {tagList.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="tag"
-                      style={{
-                        border: '2px solid #0b4216',
-                        color: '#0b4216',
-                        borderRadius: '10px', // Example radius
-                        padding: '5px 5px',
-                        marginTop: '10px',
-                        marginRight: '10px',
-                        display: 'inline-block',
-                        fontSize: '0.8em',
-                      }}
-                    >
-                    {tag}
-                  </span>
-                ))}
-                </small>
+                <TagList tags={tags}/>
               </article>
               <HorizontalLine />
             </li>
@@ -103,7 +84,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
-        excerpt
+        excerpt(pruneLength: 200)
         fields {
           slug
         }

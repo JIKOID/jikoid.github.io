@@ -25,7 +25,6 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -53,7 +52,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 600,
             },
           },
           {
@@ -66,8 +65,9 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -107,6 +107,7 @@ module.exports = {
                   frontmatter {
                     title
                     date
+                    categories
                   }
                 }
               }

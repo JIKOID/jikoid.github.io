@@ -144,8 +144,7 @@ module.exports = {
         ],
       },
     },
-    // sitemap plugin
-    `gatsby-plugin-advanced-sitemap`,
+    // robots.txt
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

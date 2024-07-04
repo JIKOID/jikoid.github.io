@@ -13,14 +13,14 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 원자가 숫자인 배열 `arr` 이 있고 배열의 길이인 `n` 은 `짝수`이고 `k` 가 주어진다.  
 이때, 배열을 정확하게 `n/2` 의 pair 가 되어야 하고 <U>pair 가 된 숫자의 합</U> 이 `k` 로 나누어져야 한다.  
 
-따라서, 배열에서 두 개의 숫자를 골라 그 합이 `k` 로 나누어지면 pair 가 되고  
+따라서, 배열에서 두 개의 숫자를 골라 그 합이 `k` 로 나누어지면 `pair` 가 되고  
 배열의 모든 원소가 pair 가 되면 `True`, 아니면 `False` 를 출력하면 된다.  
 
 <br>
 
 ```
-( arr[a] + arr[b] ) // b == True
-( arr[a] + arr[b] ) // b != False
+( arr[a] + arr[b] ) // k == True
+( arr[a] + arr[b] ) // k != False
 ```
 
 <br>
@@ -101,7 +101,7 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 나머지의 합이 0이기 때문에 k 로 나누어지는 pair 라고 할 수 있다.  
 
 
-그래서 결론은 어떤 숫자의 나머지 `remain` 이 있을 때 `k - remain` 의 합이 0 또는 5라면 pair 가 된다고 가정할 수 있다.  
+그래서 결론은 어떤 숫자의 나머지 `remain` 이 있을 때 `k - remain` 의 합이 `0` 또는 `k` 라면 pair 가 된다고 가정할 수 있다.  
 
 그리고 여기서 한 가지 더 중요한 점은 pair 라는 말은 짝수이기 때문에 짝수 만큼의 숫자가 없다면 pair 가 될 수 없다는 점도 유의해야 한다.  
   

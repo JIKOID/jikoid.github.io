@@ -144,5 +144,15 @@ module.exports = {
         ],
       },
     },
+    // sitemap plugin
+    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://jikoid.github.io',
+        sitemap: 'https://jikoid.github.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 }

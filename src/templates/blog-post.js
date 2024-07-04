@@ -6,6 +6,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import Header from "../components/post/header"
+
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
@@ -19,11 +21,14 @@ const BlogPostTemplate = ({
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p> <b>@{author}</b> · {post.frontmatter.date} </p>
-        </header>
+        <Header 
+          title={post.frontmatter.title}
+          date={post.frontmatter.date}
+          author={author}
+          tags={post.frontmatter.tags} 
+        />
         <section
+          style={{ marginTop: `5rem`, marginBottom: `5rem` }}
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
@@ -92,6 +97,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY년 MM월 DD일")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

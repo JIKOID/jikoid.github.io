@@ -10,9 +10,14 @@ export default function TagList({ tags }) {
             key={i}
             className="tag"
             style={{
-                color: '#0b4216',
+                border: '1px rgb(2, 7, 21)',
+                borderRadius: '5px',
+                backgroundColor: 'rgb(2, 7, 21)',
+                color: 'rgb(255, 255, 255 )',
+                opacity: '0.8',
                 marginTop: '20px',
                 marginRight: '10px',
+                padding: '7px',
                 display: 'inline-block',
                 fontSize: '0.8em',
             }}

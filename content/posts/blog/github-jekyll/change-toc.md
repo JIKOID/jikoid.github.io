@@ -79,8 +79,11 @@ $toc-title-color: #205b2c !default;
 <br>
 
 - 변경 전  
-<img width="301" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/3720efb4-6580-4973-965c-836b4b2e1fb1">
+<img width="301" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/e407f4ec-cc01-4ca6-9047-6a9d0d8cf7de">
 <br>
 
 - 변경 후  
-<img width="299" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/a63cd749-d46a-45e3-99dd-da4caf3416a9">
+<img width="299" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/824db9ba-b372-4ed4-9a70-410c17b72e7f">
+<br><br>
+
+이렇게 toc 를 커스텀해서 사용할 수 있다.  

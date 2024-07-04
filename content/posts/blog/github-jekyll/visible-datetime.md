@@ -18,7 +18,7 @@ show_date: true
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/42a24a6c-add6-4ca5-9315-e6535fe008c9">
+<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/75a57f44-3225-4ce0-93e2-849626cc0778">
 
 <br><br>
 
@@ -78,19 +78,19 @@ show_date: true
 그랬더니 다음과 같이 시간이 표시되었다.
 <br>
   
-<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/aded0167-44c8-4d97-9ccd-a5c36062fa3a">
+<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/272d147f-ee75-427f-ab38-f8ce8b0b8e7e">
 <br>
 
 하지만 나는 `2024-06-12` 의 날짜 형태로 보여주고 싶었기 때문에 해당 부분의 날짜 포맷을 변경해주었다.
 <br>
 
-- 변경 전
+- 변경 전 ( `%B %-d, %Y` )
 
 ```
 {% raw %}{% assign date_format = site.date_format | default: "%B %-d, %Y" %}{% endraw %}
 ```
 
-- 변경 후
+- 변경 후 ( `%Y-%m-%d` )
 
 ```
 {% raw %}{% assign date_format = site.date_format | default: "%Y-%m-%d" %}{% endraw %}
@@ -101,7 +101,7 @@ show_date: true
 그리고 다시 확인해보니 잘 적용된 것을 확인할 수 있었다.
 <br>
 
-<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/8880adf5-7bed-4e43-84a1-0708aeb37979">
+<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/a7c8196b-12b7-4f6e-9914-2ab448a3b3fa">
 
 <br><br>
 

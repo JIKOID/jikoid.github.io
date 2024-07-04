@@ -24,17 +24,17 @@ https://fonts.google.com/?subset=korean&noto.script=Kore
 
 원하는 폰트를 위의 사이트에서 검색하고나서 클릭해서 상세 정보를 확인해보면 아래의 사진과 같이 상단에 `Get font` 가 보인다.
 
-<img width="600" alt="image1" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/b8b693d2-ff32-46b6-8295-23527c4d8c56" />  
+<img width="600" alt="image1" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/33fef9d8-ece0-4ba8-b8f6-6952891702dc" />  
 <br><Br>
 
 `Get font` 를 클릭해서 들어가서 `Get embed code` 를 누른다.
 
-<img width="600" alt="image2" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/1bdab880-b9c0-4b5c-97d6-bc0b206788c7" />  
+<img width="600" alt="image2" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/6d37baff-e409-4d61-8979-163e5ebdabee" />  
 <br><br>
 
 다음으로 Web Tab 에서 Web 과 @import 선택을 할 수 있는데 @import 를 선택한다.  
 
-<img width="600" alt="image3" src="https://github.com/JIKOID/jikoid.github.io_jekyll/assets/48994100/89d5805f-6ba4-4b24-8b72-f1ac4faf0ab2">  
+<img width="600" alt="image3" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/30fdf1bb-79a5-434a-9aea-65cf70c3505e">  
 <br><br>
 
 그럼 @import 할 수 있는 코드를 제공해주는데 해당 코드를 복사한다.

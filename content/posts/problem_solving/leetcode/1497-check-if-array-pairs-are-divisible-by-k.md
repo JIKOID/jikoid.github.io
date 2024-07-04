@@ -29,6 +29,7 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 
 처음에는 하나의 원소를 가져와 다른 원소와 비교해가며 두 수의 합이 k 로 나누어진다면 True, 그렇지 않다면 False 로 풀려고 했었다.  
 하지만 이렇게 풀게 되면 시간 복잡도가 `O(n^2)` 이 되어 시간 제한 초과로 실패하게 되었다.  
+  
 <br>
 
 * 잘못된 제출 코드
@@ -65,9 +66,9 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 
 그래서 2가지의 케이스로 구분해볼 수 있었다.  
 
-1. 나머지의 합이 0 인 경우  
+1. `나머지의 합이 0 인 경우`  
     나머지의 합이 0 이라는 말은 두 수의 합이 k 로 나누어진다는 말이 되어 pair 가 된다.  
-2. 나머지의 합이 k 인 경우  
+2. `나머지의 합이 k 인 경우`  
     나머지의 합을 다시 k 로 나누게 되어 0 이 된다면 k 로 나누어질 수 있다면 pair 가 된다.
 
 <br>

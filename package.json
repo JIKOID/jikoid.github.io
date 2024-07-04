@@ -13,10 +13,12 @@
     "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.13.5",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-advanced-sitemap": "^2.1.0",
     "gatsby-plugin-feed": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-mdx": "^5.13.1",
+    "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-remark-images": "^7.13.1",
     "gatsby-remark-prismjs": "^7.13.1",
@@ -29,6 +31,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "rehype-slug": "^6.0.0",
     "require": "^2.4.20"
   },
   "devDependencies": {

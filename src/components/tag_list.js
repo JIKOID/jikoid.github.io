@@ -22,7 +22,7 @@ export default function TagList({ tags }) {
                 fontSize: '0.8em',
             }}
             >
-            <b>#{tag}</b>
+            <b>{tag}</b>
             </span>
         ))}
         </div>

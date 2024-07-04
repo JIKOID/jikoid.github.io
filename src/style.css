@@ -172,6 +172,7 @@ ol {
   margin-bottom: var(--spacing-8);
   list-style-position: outside;
   list-style-image: none;
+  margin-left: var(--spacing-6);
 }
 
 ul li,
@@ -211,6 +212,7 @@ blockquote > :last-child {
 blockquote > ul,
 blockquote > ol {
   list-style-position: inside;
+  margin-left: var(--spacing-0);
 }
 
 table {

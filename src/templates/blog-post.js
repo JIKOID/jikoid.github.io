@@ -38,26 +38,20 @@ const BlogPostTemplate = ({
         </footer>
       </article>
       <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
+        <ul>
+          <li className={previous ? "previous-link" : "empty-link"}>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                <span className="previous-link"> &lt; 이전글 </span>
+                <div className="previous-title">{previous.frontmatter.title}</div>
               </Link>
             )}
           </li>
-          <li>
+          <li className={next ? "next-link" : "empty-link"}>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                <span className="next-link"> 다음글 &gt; </span>
+                <div className="next-title">{next.frontmatter.title}</div>
               </Link>
             )}
           </li>
@@ -87,6 +81,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     markdownRemark(id: { eq: $id }) {

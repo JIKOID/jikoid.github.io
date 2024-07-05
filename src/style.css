@@ -311,7 +311,72 @@ a:focus {
 }
 
 .blog-post-nav ul {
-  margin: var(--spacing-0);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 8rem;
+}
+
+.blog-post-nav li {
+  height: 80%;
+  padding: 1rem;
+  border: var(--color-primary); /* Fixed the missing border size */
+  border-radius: 10px;
+  background-color: var(--color-accent);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.blog-post-nav a {
+  display: block;
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-post-nav a span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.blog-post-nav a div,
+.blog-post-nav a .link-title {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  max-width: 100%; /* Ensure the width is constrained to the container */
+}
+
+.blog-post-nav a .previous-link {
+  text-align: left; /* Left align the previous link */
+}
+
+.blog-post-nav a .previous-title {
+  text-align: center; /* Left align the previous link */
+}
+
+.blog-post-nav a .next-link {
+  text-align: right; /* Right align the next link */
+}
+
+.blog-post-nav a .next-title {
+  text-align: center; /* Left align the previous link */
+}
+
+.blog-post-nav .empty-link {
+  height: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
 }
 
 .gatsby-highlight {

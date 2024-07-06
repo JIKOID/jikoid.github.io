@@ -5,8 +5,8 @@ import { author } from "../../blog-config"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
-import Header from "../components/Posts/Header"
-import Footer from "../components/Posts/Footer"
+import Header from "../components/Post/Header"
+import Footer from "../components/Post/Footer"
 import TableOfContents from "../components/TableOfContents"
 
 const BlogPostTemplate = ({

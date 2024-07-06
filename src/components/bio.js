@@ -9,6 +9,10 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import getIcon from "../utils/getIcons"
+import getSocialLink from "../utils/getSocialLink"
+import Icon from "./Icon"
+
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -19,7 +23,9 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            github
+            linkedIn
+            tistory
           }
         }
       }
@@ -28,7 +34,7 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  // const social = data.site.siteMetadata?.social
+  const social = data.site.siteMetadata?.social
 
   return (
     <div className="bio">
@@ -47,9 +53,11 @@ const Bio = () => {
           <strong>{author.name}</strong>
           <p>{author?.summary || null}</p>
           <p>{` `}</p>
-          {/* <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a> */}
+          {Object.entries(social).map(([name, user]) => (
+            <a href={getSocialLink(name, user)} target="_blank" rel="noreferrer">
+              <Icon name={name} icon={getIcon(name)} />
+            </a>
+          ))}
         </p>
       )}
     </div>

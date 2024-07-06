@@ -20,8 +20,10 @@ module.exports = {
     },
     description: description,
     siteUrl: siteUrl,
-    social: {
-      twitter: `kylemathews`,
+    social:  {
+      github: "jaynamm",
+      linkedIn: "jeonghyeon-nam-201a671a5",
+      tistory: "jaynamm",
     },
   },
   plugins: [
@@ -94,6 +96,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sass`,  // SCSS를 처리할 수 있게 설정
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

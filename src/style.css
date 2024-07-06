@@ -10,8 +10,9 @@
   --maxWidth-2xl: 42rem;
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
+  --maxWidth-5xl: 64rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-4xl);
+  --maxWidth-wrapper: var(--maxWidth-5xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -385,6 +386,33 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+.table-of-contents {
+  position: fixed;
+  top: 35vh;
+  left: 77vw;
+  margin-left: 36px;
+  max-width: 300px;
+}
+
+.table-of-contents li {
+  list-style-type: none;
+  margin-left: 24px;
+  font-size: 13px;
+}
+
+.table-of-contents li a {
+  color: rgba(2, 7, 21, 0.5);
+  text-decoration: none;
+  border-bottom: 0;
+  transition: 0.5s all ease-in-out;
+  
+}
+
+.table-of-contents li a:hover {
+  color: var(--color-primary);
+}
+
+
 /* Media queries */
 
 @media (max-width: 42rem) {
@@ -395,5 +423,12 @@ a:focus {
   ul,
   ol {
     list-style-position: inside;
+  }
+}
+
+/* Hide Table of Content when screen is smaller than 1620px */
+@media only screen and (max-width: 1620px) {
+  .table-of-contents {
+    display: none;
   }
 }

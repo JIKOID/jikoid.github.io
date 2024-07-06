@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import Header from "../components/post/header"
+import TableOfContents from "../components/post/table_of_contents"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -27,6 +28,7 @@ const BlogPostTemplate = ({
           author={author}
           tags={post.frontmatter.tags} 
         />
+        <TableOfContents toc={post.tableOfContents} />
         <section
           style={{ marginTop: `5rem`, marginBottom: `5rem` }}
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -94,6 +96,7 @@ export const pageQuery = graphql`
         description
         tags
       }
+      tableOfContents
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {

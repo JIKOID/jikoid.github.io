@@ -9,9 +9,9 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import getIcon from "../utils/getIcons"
-import getSocialLink from "../utils/getSocialLink"
-import Icon from "./Icon"
+import getIcon from "../../utils/getIcons"
+import getSocialLink from "../../utils/getSocialLink"
+import Icon from "../Icon"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`

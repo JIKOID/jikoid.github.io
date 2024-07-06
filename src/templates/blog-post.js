@@ -2,12 +2,12 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { author } from "../../blog-config"
 
-import Bio from "../components/bio"
-import Layout from "../components/Layouts"
-import Seo from "../components/seo"
+import Bio from "../components/Bio"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
 
-import Header from "../components/post/header"
-import TableOfContents from "../components/post/table_of_contents"
+import Header from "../components/Post/Header"
+import TableOfContents from "../components/Post/TableOfContents"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },

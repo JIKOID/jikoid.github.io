@@ -1,5 +1,4 @@
 import React from "react";
-import ICONS from "../../constants/icons";
 import * as styles from "./Icon.module.scss";
 
 const Icon = ({ name, icon }) => (

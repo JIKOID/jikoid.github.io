@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { author } from "../../blog-config"
 
 import Bio from "../components/bio"
-import Layout from "../components/Layout"
+import Layout from "../components/Layouts"
 import Seo from "../components/seo"
 
 import Header from "../components/post/header"

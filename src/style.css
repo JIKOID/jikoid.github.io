@@ -330,6 +330,7 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post-nav a {
@@ -377,6 +378,7 @@ a:focus {
   margin: 1rem;
   background-color: transparent; /* Remove background color */
   border: none; /* Remove border */
+  box-shadow: none;
 }
 
 .gatsby-highlight {

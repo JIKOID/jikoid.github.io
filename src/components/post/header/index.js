@@ -1,5 +1,5 @@
 import * as React from "react"
-import TagList from "../../tag_list"
+import TagList from "../../TagList"
 
 export default function Header({ title, date, author, tags }) {
     return (
@@ -8,7 +8,8 @@ export default function Header({ title, date, author, tags }) {
             padding: `1rem`,
         }}>
           <h1 itemProp="headline">{title}</h1>
-          {date} · <b>@{author}</b> <TagList tags={tags} />
+          {date} · <b>@{author}</b> 
+          <TagList tags={tags} />
         </header>
     )
 }

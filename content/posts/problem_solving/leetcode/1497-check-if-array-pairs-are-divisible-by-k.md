@@ -32,7 +32,8 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
   
 <br>
 
-* 잘못된 제출 코드
+* 잘못된 제출 코드  
+
     ```
     class Solution:
         def canArrange(self, arr: List[int], k: int) -> bool:
@@ -53,8 +54,10 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 
             return True
     ```
+<br>
 
 * 제출 결과  
+  
     <img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/1e8441f9-34c6-49ae-a638-af4afe6fed97">
 
 <br><br>

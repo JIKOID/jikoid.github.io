@@ -181,10 +181,10 @@ module.exports = {
     `gatsby-plugin-advanced-sitemap-v5`,
     // robots.txt
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://jikoid.github.io',
-        sitemap: 'https://jikoid.github.io/sitemap.xml',
+        host: `https://jikoid.github.io`,
+        sitemap: `https://jikoid.github.io/sitemap.xml`,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

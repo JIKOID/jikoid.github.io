@@ -13,6 +13,7 @@
     "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.13.5",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-advanced-sitemap-v5": "^2.1.12",
     "gatsby-plugin-feed": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",

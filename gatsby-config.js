@@ -99,7 +99,6 @@ module.exports = {
     `gatsby-plugin-sass`,  // SCSS를 처리할 수 있게 설정
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-feed`,
@@ -177,6 +176,9 @@ module.exports = {
         ],
       },
     },
+    // sitemap
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-advanced-sitemap-v5`,
     // robots.txt
     {
       resolve: 'gatsby-plugin-robots-txt',

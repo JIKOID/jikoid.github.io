@@ -188,5 +188,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
+    // Google Search Console
+    `gatsby-plugin-react-helmet`,
   ],
 }

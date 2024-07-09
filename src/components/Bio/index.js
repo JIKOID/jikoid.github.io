@@ -30,6 +30,8 @@ const Bio = () => {
     }
   `)
 
+  console.log(data)
+
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
@@ -47,11 +49,11 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
+        <div>
           <strong>{author.name}</strong>
-          <p>{author?.summary || null}</p>
+          <div>{author?.summary || null}</div>
           <SocialLink social={social} />
-        </p>
+        </div>
       )}
     </div>
   )

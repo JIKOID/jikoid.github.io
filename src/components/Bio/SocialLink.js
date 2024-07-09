@@ -7,7 +7,11 @@ import getSocialLink from "../../utils/getSocialLink"
 import * as styles from "./sociallink.module.scss"
 
 export default function SocialLink({social}) {
-  return (
+    if (!social) {
+        return null
+    }
+
+    return (
         <div className={styles.social_link}>
             {Object.entries(social).map(([name, user]) => (
                 <a href={getSocialLink(name, user)} target="_blank" rel="noreferrer" style={{

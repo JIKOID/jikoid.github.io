@@ -190,5 +190,7 @@ module.exports = {
     },
     // Google Search Console
     `gatsby-plugin-react-helmet`,
+    // 서버 측에서 스타일이 적용되지 않는 문제 해결
+    `gatsby-plugin-styled-components`,
   ],
 }

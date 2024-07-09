@@ -50,7 +50,6 @@ const Bio = () => {
         <p>
           <strong>{author.name}</strong>
           <p>{author?.summary || null}</p>
-          <p>{` `}</p>
           <SocialLink social={social} />
         </p>
       )}

@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import HorizontalLine from "../components/HorizontalLine"
 import TagList from "../components/TagList"
 
 const BlogIndex = ({ data, location }) => {
@@ -57,7 +56,7 @@ const BlogIndex = ({ data, location }) => {
                 </section>
                 <TagList tags={tags}/>
               </article>
-              <HorizontalLine />
+              <hr />
             </li>
           )
         })}

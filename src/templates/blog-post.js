@@ -8,6 +8,7 @@ import Seo from "../components/Seo"
 import Header from "../components/Post/Header"
 import Footer from "../components/Post/Footer"
 import TableOfContents from "../components/TableOfContents"
+import Utterances from "../components/Utterances"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -38,6 +39,9 @@ const BlogPostTemplate = ({
         <hr />
         <Footer />
       </article>
+
+      <Utterances />
+
       <nav className="blog-post-nav">
         <ul>
           <li className={previous ? "previous-link" : "empty-link"}>

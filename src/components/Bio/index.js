@@ -8,10 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import SocialLink from "./SocialLink"
 
-import getIcon from "../../utils/getIcons"
-import getSocialLink from "../../utils/getSocialLink"
-import Icon from "../Icon"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -53,11 +51,7 @@ const Bio = () => {
           <strong>{author.name}</strong>
           <p>{author?.summary || null}</p>
           <p>{` `}</p>
-          {Object.entries(social).map(([name, user]) => (
-            <a href={getSocialLink(name, user)} target="_blank" rel="noreferrer">
-              <Icon name={name} icon={getIcon(name)} />
-            </a>
-          ))}
+          <SocialLink social={social} />
         </p>
       )}
     </div>

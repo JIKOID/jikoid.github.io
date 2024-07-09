@@ -1,0 +1,22 @@
+.social_link {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.social_link a div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(2, 7, 21);
+    margin-right: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.social_link a div svg {
+    margin-right: 0.5rem;
+}
+
+.social_link a div p {
+    text-transform: capitalize;
+}

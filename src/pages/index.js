@@ -45,7 +45,7 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{date}</small>
+                  <small>{date} · {post.timeToRead} min read</small>
                 </header>
                 <section>
                   <p
@@ -94,6 +94,12 @@ export const pageQuery = graphql`
           description
           tags
         }
+        timeToRead
+      }
+    }
+    allImageSharp {
+      nodes {
+        gatsbyImageData(placeholder: BLURRED)
       }
     }
   }

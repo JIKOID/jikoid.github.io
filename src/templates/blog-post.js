@@ -27,6 +27,7 @@ const BlogPostTemplate = ({
           date={post.frontmatter.date}
           author={author}
           tags={post.frontmatter.tags} 
+          timeToRead={post.timeToRead}
         />
         <TableOfContents toc={post.tableOfContents} />
         <section
@@ -95,6 +96,7 @@ export const pageQuery = graphql`
         tags
       }
       tableOfContents
+      timeToRead
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {

@@ -40,6 +40,8 @@ const Seo = ({ description, title, children }) => {
       <meta property="og:type" content="website" />
       {/* Google Search Console */}
       <meta name="google-site-verification" content="wWXWMf_EAndeNs5WcwgGfsTScgQfH2cu8Ozu6DuI3nQ" />
+      {/* Naver Web Master */}
+      <meta name="naver-site-verification" content="ffae897975016f2b8829e0672767e6e41a4c2bd7" />
       {children}
     </Helmet>
   )

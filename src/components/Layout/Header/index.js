@@ -9,20 +9,19 @@ export default function Header({ location, title }) {
     if (isRootPath) {
         header = (
         <h1 className="main-heading">
-            <Link to="/">
-                <title>{title}</title>
-            </Link>
+            <Link to="/">{title}</Link>
         </h1>
         )
     } else {
         header = (
-        <Link className="header-link-home" to="/">
-            <title>{title}</title>
-        </Link>
+        <Link className="header-link-home" to="/">{title}</Link>
         )
     }
 
     return (
-        <header className="global-header">{header}</header>
+        <header className="global-header">
+            <title>{title}</title>
+            {header}
+        </header>
     )
 }

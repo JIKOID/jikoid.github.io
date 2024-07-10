@@ -12,7 +12,7 @@
   --maxWidth-4xl: 56rem;
   --maxWidth-5xl: 64rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-5xl);
+  --maxWidth-wrapper: var(--maxWidth-4xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -38,7 +38,7 @@
   --fontWeight-normal: 400;
   --fontWeight-bold: 700;
   --fontWeight-black: 900;
-  --fontSize-root: 16px;
+  --fontSize-root: 14px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;

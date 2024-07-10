@@ -9,13 +9,15 @@ export default function Header({ location, title }) {
     if (isRootPath) {
         header = (
         <h1 className="main-heading">
-            <Link to="/">{title}</Link>
+            <Link to="/">
+                <title>{title}</title>
+            </Link>
         </h1>
         )
     } else {
         header = (
         <Link className="header-link-home" to="/">
-            {title}
+            <title>{title}</title>
         </Link>
         )
     }

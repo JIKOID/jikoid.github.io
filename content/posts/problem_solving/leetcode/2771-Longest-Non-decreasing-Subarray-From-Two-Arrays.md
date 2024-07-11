@@ -21,7 +21,8 @@ https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/
 
 <br>
 
-이 문제에서 구해야하는 값은 `nums3` 배열 안에서 `longest non-decreasing subarray`, 쉽게 말해 <U>감소하지 않는 오름차순으로 된 가장 긴 서브배열의 길이</U>를 구해야 한다.  
+이 문제에서 구해야하는 값은 `nums3` 배열 안에서 `length of the longest non-decreasing subarray`,   
+쉽게 말해 <U>배열의 원소가 감소하지 않고 같거나 증가하는 값으로 된 가장 긴 서브배열의 길이</U>를 구해야 한다.   
 
 <br>
 
@@ -32,6 +33,11 @@ https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/
 다시 말해서 `nums3` 배열 안에서 오름차순으로 된 가장 긴 서브 배열의 길이를 구하라는 말이다.  
 
 예를 들어, `nums3` 배열의 원소가 `[5, 1, 2, 3, 4]` 라고 한다면 가장 긴 `subarray` 는 `[1, 2, 3, 4]` 가 되므로 길이는 `4`가 된다. 
+
+```
+[ 5,   1,   2,   3,   4 ]
+       |-- subarray --|
+```
 
 
 <br>

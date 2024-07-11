@@ -426,8 +426,8 @@ a:focus {
   }
 }
 
-/* Hide Table of Content when screen is smaller than 1620px */
-@media only screen and (max-width: 1620px) {
+/* Hide Table of Content when screen is smaller than 1300px */
+@media only screen and (max-width: 1300px) {
   .table-of-contents {
     display: none;
   }

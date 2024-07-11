@@ -36,32 +36,29 @@ const BlogPostTemplate = ({
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        <nav className="blog-post-nav">
+          <ul>
+            <li className={previous ? "previous-link" : "empty-link"}>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  <span className="previous-link"> &lt; 이전글 </span>
+                  <div className="previous-title">{previous.frontmatter.title}</div>
+                </Link>
+              )}
+            </li>
+            <li className={next ? "next-link" : "empty-link"}>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  <span className="next-link"> 다음글 &gt; </span>
+                  <div className="next-title">{next.frontmatter.title}</div>
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
         <Footer />
       </article>
-
       <Utterances />
-
-      <nav className="blog-post-nav">
-        <ul>
-          <li className={previous ? "previous-link" : "empty-link"}>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                <span className="previous-link"> &lt; 이전글 </span>
-                <div className="previous-title">{previous.frontmatter.title}</div>
-              </Link>
-            )}
-          </li>
-          <li className={next ? "next-link" : "empty-link"}>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                <span className="next-link"> 다음글 &gt; </span>
-                <div className="next-title">{next.frontmatter.title}</div>
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
     </Layout>
   )
 }

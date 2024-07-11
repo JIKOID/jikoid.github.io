@@ -311,6 +311,10 @@ a:focus {
   font-family: var(--font-heading);
 }
 
+.blog-post-nav {
+  margin-bottom: 2rem;
+}
+
 .blog-post-nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */

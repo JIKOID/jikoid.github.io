@@ -178,7 +178,7 @@ module.exports = {
     },
     // sitemap
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-advanced-sitemap-v5`,
+    // `gatsby-plugin-advanced-sitemap-v5`,
     // robots.txt
     {
       resolve: `gatsby-plugin-robots-txt`,

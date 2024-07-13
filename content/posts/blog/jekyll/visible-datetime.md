@@ -1,12 +1,9 @@
 ---
 date: "2024-06-12"
 title: "Github 블로그 시간 표시하기 (Minimal Mistakes)"
+description: "Github Jekyll 블로그에서 시간의 포맷을 변경하여 적용한 내용입니다."
 tags: github minimal_mistakes datetime
-categories: blog jekyll
-author_profile: true
-toc: true
-toc_sticky: true
-show_date: true
+categories: jekyll
 ---
   
 이번에는 Github 블로그에 시간을 표시해보려고 한다.

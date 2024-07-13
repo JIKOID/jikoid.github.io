@@ -14,7 +14,7 @@ export default function SocialLink({social}) {
     return (
         <div className={styles.social_link}>
             {Object.entries(social).map(([name, user]) => (
-                <a href={getSocialLink(name, user)} target="_blank" rel="noreferrer" style={{
+                <a href={getSocialLink(name, user)} target="_blank" rel="noreferrer" key={name} style={{
                     textDecoration: "none",
                 }}>
                     <div>

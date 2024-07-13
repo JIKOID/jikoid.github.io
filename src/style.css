@@ -259,16 +259,20 @@ a:focus {
   margin: 0;
 }
 
-.post-list-wrapper a {
-  text-decoration: none;
-}
-
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
   padding: var(--spacing-8);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-list-item header a {
+  text-decoration: none;
+}
+
+.post-list-item header a:hover span {
+  text-shadow: 0 0 20px rgb(2, 7, 21);
 }
 
 .post-list-item p {

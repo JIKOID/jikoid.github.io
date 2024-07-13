@@ -12,9 +12,9 @@ export default function TagList({ tags }) {
             style={{
                 border: '1px rgb(2, 7, 21)',
                 borderRadius: '5px',
-                backgroundColor: 'rgba(2, 7, 21, 0.7)',
+                backgroundColor: 'rgb(2, 7, 21)',
                 color: 'rgb(255, 255, 255)',
-                opacity: '0.8',
+                opacity: '0.7',
                 marginTop: '20px',
                 marginRight: '10px',
                 padding: '7px',

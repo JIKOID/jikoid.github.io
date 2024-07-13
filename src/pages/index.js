@@ -33,15 +33,18 @@ const BlogIndex = ({ data, location }) => {
 
           return (
             <li key={post.fields.slug}>
-              <div className="post-list-wrapper">
-                <Link to={post.fields.slug} itemProp="url">
+              <div>
                   <article
                     className="post-list-item"
                     itemScope
                     itemType="http://schema.org/Article"
                   >
                     <header>
-                      <h2><span itemProp="headline">{title}</span></h2>
+                        <h2>
+                          <Link to={post.fields.slug} itemProp="url">
+                            <span itemProp="headline">{title}</span>
+                          </Link>
+                        </h2>
                       <small>{date} · {post.timeToRead} min read</small>
                     </header>
 
@@ -53,10 +56,10 @@ const BlogIndex = ({ data, location }) => {
                         itemProp="description"
                       />
                     </section>
-                    
+
                     <TagList tags={tags}/>
                   </article>
-                </Link>
+                
               </div>
             </li>
           )

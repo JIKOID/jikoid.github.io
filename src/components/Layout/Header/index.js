@@ -25,7 +25,7 @@ export default function Header({ location, title }) {
 
             <Helmet>
                 {/* Google Search Console */}
-                <meta name="google-site-verification" content="wWXWMf_EAndeNs5WcwgGfsTScgQfH2cu8Ozu6DuI3nQ" />
+                <meta name="google-site-verification" content="bYwWlKrL-ExMKgQ4rtapH7RM8CwPSBMmKpfMxjpTwcM" />
                 {/* Naver Web Master */}
                 <meta name="naver-site-verification" content="ffae897975016f2b8829e0672767e6e41a4c2bd7" />
             </Helmet>

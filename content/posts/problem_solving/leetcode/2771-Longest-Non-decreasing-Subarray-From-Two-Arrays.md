@@ -1,6 +1,6 @@
 ---
 date: "2024-07-05"
-title: "[Leetcode] 2771. Longest Non-decreasing Subarray From Two Arrays"
+title: "Leetcode 2771. Longest Non-decreasing Subarray From Two Arrays"
 description: "😤 Leetcode 2771. Longest Non-decreasing Subarray From Two Arrays 문제 풀이"
 categories: leetcode
 tags: problem_solving leetcode

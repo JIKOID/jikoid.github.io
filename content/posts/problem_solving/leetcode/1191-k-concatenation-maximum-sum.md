@@ -1,6 +1,6 @@
 ---
 date: "2024-07-12"
-title: "[Leetcode] 1191. K-Concatenation Maximum Sum"
+title: "Leetcode 1191. K-Concatenation Maximum Sum"
 description: "😤 Leetcode 1191. K-Concatenation Maximum Sum 문제 풀이"
 categories: leetcode
 tags: problem_solving leetcode

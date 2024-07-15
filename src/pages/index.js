@@ -1,10 +1,10 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import TagList from "../components/TagList"
+import Article from "../components/Article"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -34,32 +34,15 @@ const BlogIndex = ({ data, location }) => {
           return (
             <li key={post.fields.slug}>
               <div>
-                  <article
-                    className="post-list-item"
-                    itemScope
-                    itemType="http://schema.org/Article"
-                  >
-                    <header>
-                        <h2>
-                          <Link to={post.fields.slug} itemProp="url">
-                            <span itemProp="headline">{title}</span>
-                          </Link>
-                        </h2>
-                      <small>{date} · {post.timeToRead} min read</small>
-                    </header>
-
-                    <section>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: description || post.excerpt,
-                        }}
-                        itemProp="description"
-                      />
-                    </section>
-
-                    <TagList tags={tags}/>
-                  </article>
-                
+                  <Article 
+                    slug={post.fields.slug}
+                    title={title}
+                    date={date}
+                    timeToRead={post.timeToRead}
+                    description={description}
+                    excerpt={post.excerpt}
+                    tags={tags}
+                  />
               </div>
             </li>
           )

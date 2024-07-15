@@ -1,0 +1,32 @@
+@import "src/assets/scss/variables";
+
+.post_list_item {
+  margin-bottom: $spacing-8;
+  margin-top: $spacing-8;
+  padding: $spacing-8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post_list_item header a {
+  text-decoration: none;
+}
+
+.post_list_item header a:hover span {
+  text-shadow: 0 0 20px rgb(2, 7, 21);
+}
+
+.post_list_item p {
+  margin-bottom: $spacing-0;
+}
+
+.post_list_item h2 {
+  font-size: $fontSize-4;
+  color: $color-primary;
+  margin-bottom: $spacing-2;
+  margin-top: $spacing-0;
+}
+
+.post_list_item header {
+  margin-bottom: $spacing-4;
+}

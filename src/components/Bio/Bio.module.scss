@@ -1,0 +1,13 @@
+@import 'src/assets/scss/variables';
+
+.bio {
+  display: flex;
+  margin-bottom: $spacing-16;
+}
+
+.bio_avatar {
+  margin-right: $spacing-4;
+  margin-bottom: $spacing-0;
+  min-width: 50px;
+  border-radius: 100%;
+}

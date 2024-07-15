@@ -1,3 +1,5 @@
+@import 'src/assets/scss/variables';
+
 .social_link {
     display: flex;
     font-size: 0.8rem;
@@ -8,7 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: rgb(2, 7, 21);
+    color: $color-primary;
     margin-right: 0.8rem;
     font-size: 0.8rem;
 }
@@ -17,6 +19,6 @@
     margin-right: 0.5rem;
 }
 
-.social_link a div p {
+.social_link a div span{
     text-transform: capitalize;
 }

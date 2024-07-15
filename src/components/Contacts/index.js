@@ -4,9 +4,9 @@ import Icon from "../Icon"
 import getIcon from "../../utils/getIcons"
 import getSocialLink from "../../utils/getSocialLink"
 
-import * as styles from "./sociallink.module.scss"
+import * as styles from "./Contacts.module.scss"
 
-export default function SocialLink({social}) {
+export default function Contacts({ social }) {
     if (!social) {
         return null
     }
@@ -19,7 +19,7 @@ export default function SocialLink({social}) {
                 }}>
                     <div>
                         <Icon name={name} icon={getIcon(name)} />
-                        <p>{name}</p>
+                        <span>{name}</span>
                     </div>              
                 </a>
             ))}

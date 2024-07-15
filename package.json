@@ -11,6 +11,7 @@
     "@fontsource-variable/montserrat": "^5.0.17",
     "@fontsource/merriweather": "^5.0.8",
     "@mdx-js/react": "^2.3.0",
+    "@mediacurrent/gatsby-plugin-silence-css-order-warning": "^1.0.0",
     "gatsby": "^5.13.5",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-advanced-sitemap-v5": "^2.1.12",

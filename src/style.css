@@ -321,7 +321,11 @@ a:focus {
   font-family: var(--font-heading);
 }
 
-.blog-post section ol, li {
+.blog-post section ol {
+  margin-left: var(--spacing-4);
+}
+
+.blog-post section li {
   margin-left: var(--spacing-4);
 }
 

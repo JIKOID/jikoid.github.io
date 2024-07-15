@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables";
+
+.global_wrapper {
+  margin: $spacing-0 auto;
+  max-width: $maxWidth-wrapper;
+  padding: $spacing-10 $spacing-5;
+}
+
+.global_wrapper[data-is-root-path="true"] .bio {
+  margin-bottom: $spacing-20;
+}
+
+.global_header {
+  margin-bottom: $spacing-12;
+}
+
+.main_heading {
+  font-size: $fontSize-6;
+  margin: 0;
+}
+
+.header_link_home {
+  font-weight: $fontWeight-bold;
+  font-family: $font-heading;
+  text-decoration: none;
+  font-size: $fontSize-2;
+}

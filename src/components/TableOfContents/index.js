@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
+import * as styles from './TableOfContents.module.scss';
+
 const TableOfContents = ({ toc }) => {
   const [formattedToc, setFormattedToc] = useState('');
 
@@ -34,7 +36,7 @@ const TableOfContents = ({ toc }) => {
 
   return (
     <div 
-        className="table-of-contents" 
+        className={styles.table_of_contents} 
         dangerouslySetInnerHTML={{ __html: formattedToc }} 
     />
   );

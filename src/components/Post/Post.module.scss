@@ -1,0 +1,145 @@
+@import "src/assets/scss/variables";
+
+.post_header {
+  border-block: 2px rgb(2, 7, 21) solid;
+  padding: 1rem;
+  word-break: break-all;
+}
+
+.main_heading {
+  font-size: $fontSize-6;
+  margin: 0;
+}
+
+.header_link_home {
+  font-weight: $fontWeight-bold;
+  font-family: $font-heading;
+  text-decoration: none;
+  font-size: $fontSize-2;
+}
+
+/* Post List */
+
+.post-list-item {
+  margin-bottom: $spacing-8;
+  margin-top: $spacing-8;
+  padding: $spacing-8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-list-item header a {
+  text-decoration: none;
+}
+
+.post-list-item header a:hover span {
+  text-shadow: 0 0 20px rgb(2, 7, 21);
+}
+
+.post-list-item p {
+  margin-bottom: $spacing-0;
+}
+
+.post-list-item h2 {
+  font-size: $fontSize-4;
+  color: $color-primary;
+  margin-bottom: $spacing-2;
+  margin-top: $spacing-0;
+}
+
+.post-list-item header {
+  margin-bottom: $spacing-4;
+}
+
+/* Content */
+
+.content header h1 {
+  margin: $spacing-0 $spacing-0 $spacing-4 $spacing-0;
+}
+
+.content header p {
+  font-size: $fontSize-2;
+  font-family: $font-heading;
+}
+
+.content section ol {
+  margin-left: $spacing-4;
+}
+
+.content section li {
+  margin-left: $spacing-4;
+}
+
+.post_nav {
+  margin-bottom: 2rem;
+}
+
+.post_nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 8rem;
+}
+
+.post_nav li {
+  height: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post_nav a {
+  display: block;
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post_nav a span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.post_nav a div {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  max-width: 100%; /* Ensure the width is constrained to the container */
+}
+
+.previous_link, .next_link {
+    background-color: $color-accent;
+    border: $color-primary; /* Fixed the missing border size */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.previous_nav {
+  text-align: left; /* Left align the previous link */
+}
+
+.previous_title {
+  text-align: center; /* Left align the previous link */
+}
+
+.next_nav {
+  text-align: right; /* Right align the next link */
+}
+
+.next_title {
+  text-align: center; /* Left align the previous link */
+}
+
+.empty_link {
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  box-shadow: none;
+}

@@ -1,0 +1,33 @@
+@import "src/assets/scss/variables";
+
+.table_of_contents {
+  position: fixed;
+  top: 35vh;
+  left: 77vw;
+  margin-left: 36px;
+  max-width: 300px;
+}
+
+.table_of_contents li {
+  list-style-type: none;
+  margin-left: 24px;
+  font-size: 13px;
+}
+
+.table_of_contents li a {
+  color: rgba(2, 7, 21, 0.5);
+  text-decoration: none;
+  border-bottom: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.table_of_contents li a:hover {
+  color: var(--color-primary);
+}
+
+/* Hide Table of Content when screen is smaller than 1300px */
+@media only screen and (max-width: 1300px) {
+  .table_of_contents {
+    display: none;
+  }
+}

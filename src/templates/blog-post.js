@@ -1,12 +1,15 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { author } from "../../blog-config"
 
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
 import Header from "../components/Post/Header"
+import Content from "../components/Post/Content"
+import Navigation from "../components/Post/Navigation"
 import Footer from "../components/Post/Footer"
+
 import TableOfContents from "../components/TableOfContents"
 import Utterances from "../components/Utterances"
 
@@ -31,31 +34,8 @@ const BlogPostTemplate = ({
           timeToRead={post.timeToRead}
         />
         <TableOfContents toc={post.tableOfContents} />
-        <section
-          style={{ marginTop: `5rem`, marginBottom: `5rem` }}
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <nav className="blog-post-nav">
-          <ul>
-            <li className={previous ? "previous-link" : "empty-link"}>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  <span className="previous-link"> &lt; 이전글 </span>
-                  <div className="previous-title">{previous.frontmatter.title}</div>
-                </Link>
-              )}
-            </li>
-            <li className={next ? "next-link" : "empty-link"}>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  <span className="next-link"> 다음글 &gt; </span>
-                  <div className="next-title">{next.frontmatter.title}</div>
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
+        <Content post={post} />
+        <Navigation previous={previous} next={next} />
         <Footer />
       </article>
       <Utterances />

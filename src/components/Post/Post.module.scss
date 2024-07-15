@@ -1,9 +1,15 @@
 @import "src/assets/scss/variables";
 
+/* Post Header */
+
 .post_header {
   border-block: 2px rgb(2, 7, 21) solid;
   padding: 1rem;
   word-break: break-all;
+}
+
+.post_header h1 {
+  margin: 1px;
 }
 
 .main_heading {

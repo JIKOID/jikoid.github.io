@@ -1,5 +1,7 @@
 import * as React from "react"
 
+import TagList from "../../TagList"
+
 import * as styles from "../Post.module.scss"
 
 const Content = ({ post }) => {

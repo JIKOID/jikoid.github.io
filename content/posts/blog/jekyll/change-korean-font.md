@@ -3,7 +3,7 @@ date: "2024-05-15"
 title: "Github 블로그 한글 폰트 적용하기 (Minimal Mistakes)"
 description: "Github Jekyll 블로그에서 한글 폰트를 적용하는 방법입니다."
 tags: github minimal_mistakes
-categories: jekyll
+categories: blog jekyll
 ---
 
 

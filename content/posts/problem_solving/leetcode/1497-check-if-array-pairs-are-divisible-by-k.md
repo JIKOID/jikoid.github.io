@@ -2,7 +2,7 @@
 date: "2024-07-04"
 title: "Leetcode 1497. Check If Array Pairs Are Divisible by k"
 description: "😤 Leetcode 1497. Check If Array Pairs Are Divisible by k 문제 풀이"
-categories: leetcode
+categories: algorithm leetcode
 tags: problem_solving leetcode
 ---
 

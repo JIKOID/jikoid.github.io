@@ -98,7 +98,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 1) **`k = 1` 인 경우**  
 
-    ```
+    ```python
     arr = [-5,-2,0,0,3,9,-2,-5,4]
     k = 1
     ```
@@ -113,7 +113,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 2) **`k = 2` 인 경우**  
 
-    ```
+    ```python
     arr = [1, -3, -4, 1]
     k = 2
     ```
@@ -130,7 +130,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 3) **`k = 2` 이지만 sub-array 가 `하나의 배열` 에만 포함되는 경우**  
 
-    ```
+    ```python
     arr = [-2, -3, 7, -1]
     k = 2
     ```
@@ -147,7 +147,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 4) **`k >= 3` 이고 sub-array 가 `모든 배열`에 포함되는 경우**  
 
-    ```
+    ```python
     arr = [-5,-2,0,0,3,9,-2,-5,4]
     k = 4
     ```
@@ -164,7 +164,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 5) **`k >= 3` 이지만 sub-array 가 `두 개의 배열` 에만 포함되는 경우**  
 
-    ```
+    ```python
     arr = [1,-2,1]
     k = 5
     ```
@@ -181,7 +181,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 6) **`k >= 3` 이지만 sub-array 가 `하나의 배열` 에만 포함되는 경우**  
 
-    ```
+    ```python
     arr = [-5,4,-4,-3,5,-3]
     k = 3
     ```
@@ -210,7 +210,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 먼저 k = 1 인 경우 하나의 배열에서 sub-array 의 최대 합을 구해주었다.  
 
-```
+```python
 # k = 1 인 경우 하나의 배열에서 최대 합계 구하기
     def max_subarray_sum(arr: List[int]):
         cur_sum = 0
@@ -238,7 +238,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 따라서, 이와 같은 코드는 다음과 같이 작성해주었다.  
 
-```
+```python
 # k = 2 이상인 경우 가장 앞의 배열의 최대 합계 구하기
 # index = 0 부터 최대 합계를 구한다.
 def max_prefix_sum(arr: List[int]):
@@ -271,7 +271,7 @@ def max_suffix_sum(arr: List[int]):
 **k = 1 인 경우**  
 - 하나의 배열만 가지고 있기 때문에 arr 안에서 sub-array 의 합을 구한다.  
 
-```
+```python
 max_one_sum = max_subarray_sum(arr=arr)
 
 # k = 1 인 경우 하나의 배열 밖에 없기 때문에 하나의 배열 안에 subarray 의 합을 구한다. 
@@ -282,7 +282,7 @@ if k == 1:
 **k = 2 인 경우**  
 - sub-array 가 하나의 배열 안에 있는 경우와 2개의 배열에 포함되어있는 경우를 확인해서 합을 구해준다.  
 
-```
+```python
 # 모듈러 연산을 위한 계산
 modulo = (10 ** 9) + 7
 
@@ -296,7 +296,7 @@ if k == 2:
 - 중간 배열의 모든 합이 음수이면 sub-array 가 하나의 배열에 포함하는 경우와 2개의 배열에 포함하는 경우로 나눌 수 있다.  
 - 중간 배열의 모든 합이 양수이면 sub-array 가 전체 배열에 포함되는 경우와 하나의 배열에 포함된느 경우로 나눌 수 있다.  
 
-```
+```python
 # 모듈러 연산을 위한 계산
 modulo = (10 ** 9) + 7
 
@@ -317,7 +317,7 @@ else:
 
 ## 제출 답안
 
-```
+```python
 class Solution:
     def kConcatenationMaxSum(self, arr: List[int], k: int) -> int:
         # k = 1 인 경우 하나의 배열에서 최대 합계 구하기

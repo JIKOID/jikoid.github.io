@@ -19,7 +19,7 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 
 <br>
 
-```
+```python
 ( arr[a] + arr[b] ) // k == True
 ( arr[a] + arr[b] ) // k != False
 ```
@@ -35,7 +35,7 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 
 * 잘못된 제출 코드  
 
-    ```
+    ```python
     class Solution:
         def canArrange(self, arr: List[int], k: int) -> bool:
             for i in range(len(arr)):
@@ -80,7 +80,7 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
   
 이 말을 식으로 나타내보자면 다음과 같다.  
 
-```
+```python
 (a % k) + ( b % k ) % k == 0
 ```
 <br>
@@ -91,14 +91,14 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
   
 먼저 두 수의 나머지를 구한다.
 
-```
+```python
 3 % 5 = 3
 7 % 5 = 2
 ```
   
 다음으로 두 수의 나머지 합을 구한다.  
 
-```
+```python
 3 + 2 = 5
 ```
   
@@ -118,7 +118,7 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
   
 먼저, 배열 안에 있는 숫자들의 나머지의 갯수를 세어주었다.  
   
-```
+```python
 remain_count = {i:0 for i in range(k)}
 
 for num in arr:
@@ -132,7 +132,7 @@ for num in arr:
 
 이제 위에서 말한 2가지 경우에 대해서 코드로 작성해주면 된다.
 
-```
+```python
 for remain in remain_count.keys():
 # k 로 나누어지는 수인 경우(나머지가 0인 경우)
 # pair 를 만들기 위해서 짝수 개가 필요하다.
@@ -149,7 +149,7 @@ else:
 
 
 ## 제출 답안
-```
+```python
 class Solution:
     def canArrange(self, arr: List[int], k: int) -> bool:
         remain_count = {i:0 for i in range(k)}

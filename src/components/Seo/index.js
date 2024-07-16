@@ -25,7 +25,7 @@ const Seo = ({ description, title, children }) => {
         }
         featuredImage: file(absolutePath: {glob: "**/src/images/avatar.png"}) {
           childImageSharp {
-            gatsbyImageData(layout: FIXED, width: 1200)
+            gatsbyImageData(layout: FIXED, width: 800)
           }
         }
       }

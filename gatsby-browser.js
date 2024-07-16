@@ -13,3 +13,5 @@ import "prismjs/themes/prism.css"
 
 // Link Beautify
 import 'gatsby-remark-link-beautify/themes/notion.css'
+
+require("prismjs/themes/prism-solarizedlight.css")

@@ -154,7 +154,7 @@ https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/
 동적 프로그래밍을 통해 문제를 풀 수 있었는데 다음과 같이 dp 를 정의해주었다.  
 dp 의 초기값을 1 로 설정한 이유는 Subarray 는 최소 하나의 원소가 있는 경우 성립하기 때문에 기본 길이는 1 이 되어 초기값을 1로 설정해주었다.  
 
-```
+```python
 dp = [[1] * 3 for _ in range(len(nums1))]
 max_length = dp[0][2]
 ```

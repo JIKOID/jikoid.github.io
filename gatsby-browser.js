@@ -10,3 +10,6 @@ import "./src/assets/scss/main.scss"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
+
+// Link Beautify
+import 'gatsby-remark-link-beautify/themes/notion.css'

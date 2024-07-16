@@ -27,6 +27,8 @@
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-remark-autolink-headers": "^6.13.1",
     "gatsby-remark-images": "^7.13.1",
+    "gatsby-remark-link-beautify": "^2.3.0",
+    "gatsby-remark-link-preview": "^1.0.1",
     "gatsby-remark-prismjs": "^7.13.1",
     "gatsby-remark-responsive-iframe": "^6.13.1",
     "gatsby-remark-table-of-contents": "^2.0.0",

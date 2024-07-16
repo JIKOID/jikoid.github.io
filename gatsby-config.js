@@ -93,6 +93,7 @@ module.exports = {
               className: `anchor`,
             },
           },
+          `gatsby-remark-link-beautify`,
         ],
       },
     },
@@ -193,5 +194,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     // CSs order warning sliences
     `@mediacurrent/gatsby-plugin-silence-css-order-warning`,
+    // Link Prefetching
+    `gatsby-remark-link-preview`,
   ],
 }

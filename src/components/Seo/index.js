@@ -9,7 +9,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ description, title, children }) => {
-  const { site } = useStaticQuery(
+  const { site, featuredImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -23,12 +23,18 @@ const Seo = ({ description, title, children }) => {
             }
           }
         }
+        featuredImage: file(absolutePath: {glob: "**/src/images/avatar.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 1200)
+          }
+        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const ogImage = site.featuredImage ?? featuredImage?.childImageSharp?.gatsbyImageData;
 
   return (
     <>
@@ -37,6 +43,9 @@ const Seo = ({ description, title, children }) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content={ogImage.images.fallback.src} />
+      <meta property="og:image:width" content={ogImage.width} />
+      <meta property="og:image:height" content={ogImage.height} />
       {children}
     </>
   )

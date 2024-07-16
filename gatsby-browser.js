@@ -9,7 +9,7 @@ import "./src/normalize.css"
 import "./src/assets/scss/main.scss"
 
 // Highlighting for code blocks
-import "prismjs/themes/prism.css"
+import "./src/assets/scss/base/prism.scss"
 
 // Link Beautify
 import 'gatsby-remark-link-beautify/themes/notion.css'

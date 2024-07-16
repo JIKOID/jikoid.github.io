@@ -1,4 +1,4 @@
-.gatsby-highlight {
+section {
 /**
  * atom-dark theme for `prism.js`
  * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
@@ -25,6 +25,8 @@
      -moz-hyphens: none;
      -ms-hyphens: none;
      hyphens: none;
+
+     margin: 0.1rem;
  }
  
  /* Code blocks */
@@ -42,8 +44,8 @@
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {
-     padding: .1em;
-     border-radius: .3em;
+     padding: .2em;
+     border-radius: .2em;
  }
  
  .token.comment,

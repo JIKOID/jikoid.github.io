@@ -32,6 +32,7 @@ const BlogPostTemplate = ({
           author={author}
           tags={post.frontmatter.tags} 
           timeToRead={post.timeToRead}
+          categories={post.frontmatter.categories}
         />
         <TableOfContents toc={post.tableOfContents} />
         <Content post={post} />
@@ -75,6 +76,7 @@ export const pageQuery = graphql`
         date(formatString: "YYYY년 MM월 DD일")
         description
         tags
+        categories
       }
       tableOfContents
       timeToRead

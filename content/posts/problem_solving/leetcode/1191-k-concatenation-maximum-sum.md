@@ -1,9 +1,9 @@
 ---
 date: "2024-07-12"
-title: "Leetcode 1191. K-Concatenation Maximum Sum"
+title: "Leetcode 1191. K-Concatenation Maximum Sum (Python3)"
 description: "😤 Leetcode 1191. K-Concatenation Maximum Sum 문제 풀이"
 categories: algorithm leetcode
-tags: problem_solving leetcode
+tags: problem_solving leetcode python3
 ---
 
 ## 문제 링크

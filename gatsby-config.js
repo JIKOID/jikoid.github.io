@@ -123,7 +123,6 @@ module.exports = {
               className: `anchor`,
             },
           },
-          `gatsby-remark-link-beautify`,
         ],
       },
     },

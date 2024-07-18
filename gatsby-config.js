@@ -193,19 +193,6 @@ module.exports = {
         icon: `src/images/avatar.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-omni-font-loader`,
-      options: {
-        enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-        web: [
-          {
-            name: `Noto Sans`,
-            file: `https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap`,
-          },
-        ],
-      },
-    },
     // sitemap
     // `gatsby-plugin-sitemap`,
     `gatsby-plugin-advanced-sitemap-v5`,

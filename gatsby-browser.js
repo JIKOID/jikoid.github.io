@@ -11,7 +11,4 @@ import "./src/assets/scss/main.scss"
 // Highlighting for code blocks
 import "./src/assets/scss/base/prism.scss"
 
-// Link Beautify
-import 'gatsby-remark-link-beautify/themes/notion.css'
-
 require("prismjs/themes/prism-solarizedlight.css")

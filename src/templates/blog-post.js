@@ -6,11 +6,10 @@ import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
 import Header from "../components/Post/Header"
+import TableOfContents from "../components/TableOfContents"
 import Content from "../components/Post/Content"
 import Navigation from "../components/Post/Navigation"
 import Footer from "../components/Post/Footer"
-
-import TableOfContents from "../components/TableOfContents"
 import Utterances from "../components/Utterances"
 
 const BlogPostTemplate = ({

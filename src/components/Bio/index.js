@@ -6,9 +6,11 @@
  */
 
 import * as React from "react"
+
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Contacts from "../Contacts"
+
 import * as styles from "./Bio.module.scss"
 
 

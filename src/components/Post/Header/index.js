@@ -1,7 +1,8 @@
 import * as React from "react"
+import * as styles from "../Post.module.scss"
+
 import TagList from "../../TagList"
 
-import * as styles from "../Post.module.scss"
 
 export default function Header({ title, date, author, tags, timeToRead, categories }) {
     const main_category = categories.split(' ')[0]

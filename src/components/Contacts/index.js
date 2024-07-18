@@ -1,10 +1,12 @@
 import * as React from "react"
-import Icon from "../Icon"
 
-import getIcon from "../../utils/getIcons"
 import getSocialLink from "../../utils/getSocialLink"
+import Icon from "../Icon"
+import getIcon from "../../utils/getIcons"
 
 import * as styles from "./Contacts.module.scss"
+
+
 
 export default function Contacts({ social }) {
     if (!social) {

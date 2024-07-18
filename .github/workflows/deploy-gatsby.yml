@@ -23,26 +23,26 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Cache Gatsby `.cache` directory
-        uses: actions/cache@v3
-        id: gatsby-cache-folder
-        with:
-          path: .cache
-          key: ${{ runner.os }}-cacahe-gatsby
-          restore-keys: |
-            ${{ runner.os }}-cacahe-gatsby
+      # - name: Cache Gatsby `.cache` directory
+      #   uses: actions/cache@v3
+      #   id: gatsby-cache-folder
+      #   with:
+      #     path: .cache
+      #     key: ${{ runner.os }}-cacahe-gatsby
+      #     restore-keys: |
+      #       ${{ runner.os }}-cacahe-gatsby
 
-      - if: steps.gatsby-cache-folder.outputs.cache-hit == 'true'
-        run: echo "gatsby-cache-folder cache hit!"
+      # - if: steps.gatsby-cache-folder.outputs.cache-hit == 'true'
+      #   run: echo "gatsby-cache-folder cache hit!"
 
-      - name: Cache Gatsby `public` directory
-        uses: actions/cache@v3
-        id: gatsby-public-folder
-        with:
-          path: public
-          key: ${{ runner.os }}-cacahe-gatsby-public
-          restore-keys: |
-            ${{ runner.os }}-cacahe-gatsby-public
+      # - name: Cache Gatsby `public` directory
+      #   uses: actions/cache@v3
+      #   id: gatsby-public-folder
+      #   with:
+      #     path: public
+      #     key: ${{ runner.os }}-cacahe-gatsby-public
+      #     restore-keys: |
+      #       ${{ runner.os }}-cacahe-gatsby-public
 
       - name: Build Gatsby
         run: npm run build

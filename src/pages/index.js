@@ -85,10 +85,5 @@ export const pageQuery = graphql`
         timeToRead
       }
     }
-    allImageSharp {
-      nodes {
-        gatsbyImageData(placeholder: BLURRED)
-      }
-    }
   }
 `

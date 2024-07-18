@@ -223,5 +223,11 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     // CSs order warning sliences
     `@mediacurrent/gatsby-plugin-silence-css-order-warning`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ['G-3M3L3CQTS0']
+      }
+    },
   ],
 }

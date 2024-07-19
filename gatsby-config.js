@@ -194,13 +194,13 @@ module.exports = {
       },
     },
     // sitemap
-    // `gatsby-plugin-sitemap`,
-    `gatsby-plugin-advanced-sitemap-v5`,
+    `gatsby-plugin-sitemap`,
+    // `gatsby-plugin-advanced-sitemap-v5`,
     // robots.txt
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://jikoid.github.io/sitemap-pages.xml`,
+        sitemap: `https://jikoid.github.io/sitemap.xml`,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

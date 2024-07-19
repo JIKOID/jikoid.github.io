@@ -195,12 +195,11 @@ module.exports = {
     },
     // sitemap
     `gatsby-plugin-sitemap`,
-    // `gatsby-plugin-advanced-sitemap-v5`,
     // robots.txt
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://jikoid.github.io/sitemap.xml`,
+        sitemap: `https://jikoid.github.io/sitemap-index.xml`,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

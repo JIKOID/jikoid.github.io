@@ -59,6 +59,10 @@
 
 /* Content */
 
+.content {
+  line-break: anywhere;
+}
+
 .content header h1 {
   margin: $spacing-0 $spacing-0 $spacing-4 $spacing-0;
 }

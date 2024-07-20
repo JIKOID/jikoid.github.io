@@ -32,7 +32,10 @@ $fontFamily-sans: "Noto Sans", "MontserratVariable", system-ui, -apple-system,
   BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
   sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
   "Noto Color Emoji";
-$fontFamily-serif: "Noto Sans";
+$fontFamily-serif: "Noto Sans", "MontserratVariable", system-ui, -apple-system,
+  BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
 $font-body: $fontFamily-serif;
 $font-heading: $fontFamily-sans;
 $fontWeight-normal: 400;

@@ -3,7 +3,7 @@ date: "2024-07-20 17:47"
 title: "두핸즈 1차 면접 후기 (+ 면접 결과)"
 description: "두핸즈 1차 면접과 면접 결과에 대한 후기를 작성하였습니다."
 categories: 제이로그 면접후기
-tags: problem_solving leetcode python3
+tags: 두핸즈 1차면접 면접후기 면접합격
 ---
 
 <div style="text-align: center;">

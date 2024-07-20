@@ -2,7 +2,7 @@
 date: "2024-07-05"
 title: "Leetcode 2771. Longest Non-decreasing Subarray From Two Arrays (Python3)"
 description: "😤 Leetcode 2771. Longest Non-decreasing Subarray From Two Arrays Python 문제 풀이"
-categories: algorithm leetcode
+categories: 알고리즘 leetcode
 tags: problem_solving leetcode python3
 ---
 

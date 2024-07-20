@@ -11,7 +11,7 @@ export default function Header({ title, date, author, tags, timeToRead, categori
     return (
         <header className={styles.post_header}>
           {sub_category ? 
-            <div className={styles.article_categories}><span>{main_category} > {sub_category}</span></div>
+            <div className={styles.article_categories}><span>{main_category}{" ﹥ "}{sub_category}</span></div>
             :
             <div className={styles.article_categories}><span>{main_category}</span></div>
           }

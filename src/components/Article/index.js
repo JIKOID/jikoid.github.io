@@ -16,7 +16,7 @@ const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, ca
             >
             <header>
                 {sub_category ? 
-                    <div className={styles.article_categories}><span>{main_category} > {sub_category}</span></div>
+                    <div className={styles.article_categories}><span>{main_category}{" ﹥ "}{sub_category}</span></div>
                     :
                     <div className={styles.article_categories}><span>{main_category}</span></div>
                 }

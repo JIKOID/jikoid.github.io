@@ -5,8 +5,8 @@ import TagList from "../../TagList"
 
 
 export default function Header({ title, date, author, tags, timeToRead, categories }) {
-    const main_category = categories.split(' ')[0]
-    const sub_category = categories.split(' ')[1]
+    const main_category = categories[0]
+    const sub_category = categories[1]
     
     return (
         <header className={styles.post_header}>

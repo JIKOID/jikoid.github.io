@@ -5,8 +5,8 @@ import TagList from "../../components/TagList"
 import * as styles from "./Article.module.scss"
 
 const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, categories }) => {
-    const main_category = categories.split(' ')[0]
-    const sub_category = categories.split(' ')[1]
+    const main_category = categories[0]
+    const sub_category = categories[1]
 
     return (
         <article

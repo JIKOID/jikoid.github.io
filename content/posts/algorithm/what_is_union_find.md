@@ -2,8 +2,8 @@
 date: "2024-07-17"
 title: "Union-Find 알고리즘 이해하기"
 description: "Union-Find 알고리즘에 대해서 공부하고 정리한 내용입니다."
-categories: 알고리즘 개념정리
-tags: algorithm union-find disjoint-set union find 
+categories: ["알고리즘", "개념정리"]
+tags: ["algorithm", "union-find", "disjoint-set", "union", "find"]
 ---
 
 ## Union-Find 알고리즘이란  

@@ -2,8 +2,8 @@
 date: "2024-07-04"
 title: "Leetcode 1497. Check If Array Pairs Are Divisible by k (Python3)"
 description: "😤 Leetcode 1497. Check If Array Pairs Are Divisible by k 문제 풀이"
-categories: 알고리즘 leetcode
-tags: problem_solving leetcode python3
+categories: ["알고리즘", "leetcode"]
+tags: ["problem_solving", "leetcode", "python"]
 ---
 
 ## 문제 링크

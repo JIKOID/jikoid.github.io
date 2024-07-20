@@ -2,7 +2,7 @@
 date: "2024-07-19"
 title: "Leetcode 402. Remove K Digits (Python3)"
 description: "😤 Leetcode 402. Remove K Digits 문제 풀이"
-categories: algorithm leetcode
+categories: 알고리즘 leetcode
 tags: problem_solving leetcode python3
 ---
 

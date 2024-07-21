@@ -15,13 +15,14 @@ const Categories = ({ location }) => {
         }
     `)
 
-    console.log("data = ", data )
-
     const categoriesGroup = data.categories.group
     const categories = []
+    let AllPostsCount = 0
 
     categoriesGroup.reduce((categoryMap, group) => {
         const { fieldValue, totalCount } = group
+
+        AllPostsCount += totalCount
         
         fieldValue.split('/').reduce((mainCategory, subCategory, index, arr) => {
             mainCategory += `${index === 0 ? '' : '/'}${subCategory}`
@@ -46,11 +47,12 @@ const Categories = ({ location }) => {
 
     return (
 
-    console.log("categories = ", categories),
-
     <nav className={styles.nav} role="navigation">
         <ol className={styles.nav_links}>
-        {categories.map(({ slug, category, count, depth }) => (
+            <li>
+                <Link to="/">All Posts <small>({AllPostsCount})</small></Link>
+            </li>
+            {categories.map(({ slug, category, count, depth }) => (
              <li
                 className={`${styles.nav_link} ${depth ? styles.sub : ''} ${currentCategory === slug ? styles.current : ''}`}
                 key={category}
@@ -59,7 +61,7 @@ const Categories = ({ location }) => {
                     {category} <small>({count})</small>
                 </Link>
             </li>
-        ))}
+            ))}
         </ol>
     </nav >
     )

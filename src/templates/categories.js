@@ -10,10 +10,6 @@ const CategoryTemplate = ({ data, location, pageContext }) => {
     const posts = data.allMarkdownRemark.edges
     const category = pageContext.category.slice(2, -1)
 
-    console.log(data)
-    console.log(posts)
-    console.log(category)
-
     return (
         <Layout location={location} title={title}>
             <div>
@@ -49,7 +45,7 @@ export default CategoryTemplate;
 
 export const Head = ({ pageContext }) => {
     const category = pageContext.category.slice(2, -1)
-    
+
     return (
         <Seo title={category} />
     )

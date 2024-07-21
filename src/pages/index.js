@@ -12,8 +12,6 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.edges
 
-  console.log(posts)
-
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
@@ -33,8 +31,6 @@ const BlogIndex = ({ data, location }) => {
       <Categories location={location} />
       <ol style={{ listStyle: `none` }}>
         {posts.map(({ node }) => {
-          console.log(node)
-
           const title = node.frontmatter.title || node.fields.slug
           const { date, description, tags, categories } = node.frontmatter
 

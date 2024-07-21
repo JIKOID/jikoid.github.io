@@ -5,8 +5,7 @@ import TagList from "../../components/TagList"
 import * as styles from "./Article.module.scss"
 
 const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, categories }) => {
-    const main_category = categories[0]
-    const sub_category = categories[1]
+    const [mainCategory, subCategory] = categories.split('/')
 
     return (
         <article
@@ -15,10 +14,10 @@ const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, ca
             itemType="http://schema.org/Article"
             >
             <header>
-                {sub_category ? 
-                    <div className={styles.article_categories}><span>{main_category}{" ﹥ "}{sub_category}</span></div>
+                {subCategory ? 
+                    <div className={styles.article_categories}><span>{mainCategory}{" ﹥ "}{subCategory}</span></div>
                     :
-                    <div className={styles.article_categories}><span>{main_category}</span></div>
+                    <div className={styles.article_categories}><span>{mainCategory}</span></div>
                 }
                 <h2>
                     <Link to={slug} itemProp="url">

@@ -5,11 +5,14 @@ import Layout from "../components/Layout"
 import Bio from "../components/Bio"
 import Article from "../components/Article"
 import Seo from "../components/Seo"
+import Categories from "../components/Categories"
 
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.allMarkdownRemark.edges
+
+  console.log(posts)
 
   if (posts.length === 0) {
     return (
@@ -27,21 +30,24 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Bio />
+      <Categories location={location} />
       <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-          const { date, description, tags, categories } = post.frontmatter
+        {posts.map(({ node }) => {
+          console.log(node)
+
+          const title = node.frontmatter.title || node.fields.slug
+          const { date, description, tags, categories } = node.frontmatter
 
           return (
-            <li key={post.fields.slug}>
+            <li key={node.fields.slug}>
               <div>
                   <Article 
-                    slug={post.fields.slug}
+                    slug={node.fields.slug}
                     title={title}
                     date={date}
-                    timeToRead={post.timeToRead}
+                    timeToRead={node.timeToRead}
                     description={description}
-                    excerpt={post.excerpt}
+                    excerpt={node.excerpt}
                     tags={tags}
                     categories={categories}
                   />
@@ -71,19 +77,21 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
-      nodes {
-        excerpt(pruneLength: 200)
-        fields {
-          slug
+      edges {
+        node {
+          excerpt(pruneLength: 200)
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "YYYY년 MM월 DD일")
+            title
+            description
+            categories
+            tags
+          }
+          timeToRead
         }
-        frontmatter {
-          date(formatString: "YYYY년 MM월 DD일")
-          title
-          description
-          categories
-          tags
-        }
-        timeToRead
       }
     }
   }

@@ -2,7 +2,7 @@
 date: "2024-07-19 17:31"
 title: "Monotonic Stack (단조 스택) 알고리즘 이해하기"
 description: "Monotonic Stack (단조 스택) 알고리즘에 대해서 공부하고 정리한 내용입니다."
-categories: ["알고리즘", "개념정리"]
+categories: 알고리즘/개념정리
 tags: ["algorithm", "monotonic", "stack"]
 ---
 

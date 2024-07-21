@@ -2,7 +2,7 @@
 date: "2024-07-18"
 title: "Gatsby 블로그 성능 검사 with Lighthouse"
 description: "lighthouse 를 사용해서 Gatsby 블로그의 성능을 테스트해보자."
-categories: ["blog", "gatsby"]
+categories: blog/gatsby
 tags: ["gatsby", "lighthouse"]
 ---
 

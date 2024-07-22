@@ -8,7 +8,6 @@ import Article from "../components/Article"
 const CategoryTemplate = ({ data, location, pageContext }) => {
     const title = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-    const category = pageContext.category.slice(2, -1)
 
     return (
         <Layout location={location} title={title}>

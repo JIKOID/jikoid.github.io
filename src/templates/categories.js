@@ -13,7 +13,6 @@ const CategoryTemplate = ({ data, location, pageContext }) => {
     return (
         <Layout location={location} title={title}>
             <div>
-                <h1>{category}</h1>
                 {posts.map(({ node }) => {
                     const { title, date, description, tags, categories } = node.frontmatter
                     const { slug } = node.fields

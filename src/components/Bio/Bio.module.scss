@@ -2,7 +2,16 @@
 
 .bio {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: $spacing-16;
+  margin: 1rem;
+}
+
+.bio div {
+  text-align: center;
+  margin: 0.3rem;
 }
 
 .bio_avatar {
@@ -10,4 +19,25 @@
   margin-bottom: $spacing-0;
   min-width: 50px;
   border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .bio {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: $spacing-8;
+    gap: 1rem;
+
+    div {
+      margin: 1px; 
+      text-align: left;
+    }
+  }
+
+  .bio_avatar {
+    margin-right: $spacing-4;
+    margin-bottom: $spacing-0;
+    min-width: 50px;
+    border-radius: 100%;
+  }
 }

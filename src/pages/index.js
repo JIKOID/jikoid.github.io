@@ -5,7 +5,6 @@ import Layout from "../components/Layout"
 import Bio from "../components/Bio"
 import Article from "../components/Article"
 import Seo from "../components/Seo"
-import Categories from "../components/Categories"
 
 
 const BlogIndex = ({ data, location }) => {
@@ -27,8 +26,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Bio />
-      <Categories location={location} />
+      {/* <Bio /> */}
       <ol style={{ listStyle: `none` }}>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

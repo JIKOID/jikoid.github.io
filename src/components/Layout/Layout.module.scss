@@ -1,12 +1,32 @@
 @import "src/assets/scss/variables";
 
-.global_wrapper {
-  margin: $spacing-0 auto;
-  max-width: $maxWidth-wrapper;
-  padding: $spacing-10 $spacing-5;
+.container {
+  display: flex;
+  flex-direction: row;
+  transition: color 0.2s ease-out, background 0.2s ease-out;
+  margin: 0 auto;
+  max-width: $maxWidth-6xl;
+  
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }
 
-.global_wrapper[data-is-root-path="true"] .bio {
+.content_wrapper {
+  flex: 1;
+  margin: $spacing-0;
+  max-width: $maxWidth-wrapper;
+  padding: $spacing-3 $spacing-3;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    max-width: calc(100% - 228px);
+  }
+}
+
+.content_wrapper[data-is-root-path="true"] .bio {
   margin-bottom: $spacing-20;
 }
 

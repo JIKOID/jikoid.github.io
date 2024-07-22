@@ -13,10 +13,10 @@
 }
 
 .content_wrapper {
-  flex: 1;
   margin: $spacing-0;
   max-width: $maxWidth-wrapper;
   padding: $spacing-3 $spacing-3;
+  width: -webkit-fill-available;
 
   @media screen and (max-width: 768px) {
     padding-top: 0;
@@ -37,6 +37,7 @@
 
   @media screen and (max-width: 768px) {
     text-align: center;
+    border-bottom: 1px solid $color-grey;
   }
 }
 
@@ -52,4 +53,20 @@
 .header_link_home {
   text-decoration: none;
   font-size: $fontSize-6;
+}
+
+// headroom
+@media screen and (max-width: 768px) {
+  .global_header {
+    &.headroom {
+      will-change: transform;
+      transition: transform 200ms ease-out, color 0.2s ease-out, background 0.2s ease-out;
+    }
+    &.headroom--pinned {
+        transform: translateY(0%);
+    }
+    &.headroom--unpinned {
+        transform: translateY(-100%);
+    }
+  }
 }

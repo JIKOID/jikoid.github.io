@@ -19,10 +19,14 @@ body {
   font-family: $font-body;
   font-size: $fontSize-1;
   color: $color-text;
+  padding-top: 60px; /* Adjust this value based on the height of your header */
 }
 
 footer {
   padding: $spacing-6 $spacing-0;
+  max-width: $maxWidth-7xl;
+  margin-bottom: $spacing-12;
+  margin: 1px auto;
 }
 
 hr {

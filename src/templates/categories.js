@@ -33,7 +33,6 @@ const CategoryTemplate = ({ data, location, pageContext }) => {
                         </div>
                     )
                 })}
-                <Link to="/">All categories</Link>
             </div>
         </Layout>
     )

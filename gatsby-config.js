@@ -194,14 +194,18 @@ module.exports = {
       },
     },
     // sitemap
-    // `gatsby-plugin-sitemap`,
-    `gatsby-plugin-advanced-sitemap-v5`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
     // robots.txt
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://jikoid.github.io/sitemap-pages.xml`,
-        policy: [{ userAgent: '*', allow: '/' }],
+        sitemap: `https://jikoid.github.io/sitemap-0.xml`,
+        policy: [{ 
+          userAgent: '*', 
+          allow: '/',
+         }],
       },
     },
     // Google Search Console

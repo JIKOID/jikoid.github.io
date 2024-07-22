@@ -195,13 +195,23 @@ module.exports = {
     },
     // sitemap
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: `gatsby-plugin-advanced-sitemap-v5`,
+      options: {
+        exclude: [
+          `/dev-404-page`, 
+          `/404`, 
+          `/404.html`,
+          `/dev-404-page.html`, 
+          `/using-typescript/`,
+        ],
+        createLinkInHead: true,
+      },
     },
     // robots.txt
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://jikoid.github.io/sitemap-0.xml`,
+        sitemap: `https://jikoid.github.io/sitemap.xml`,
         policy: [{ 
           userAgent: '*', 
           allow: '/',

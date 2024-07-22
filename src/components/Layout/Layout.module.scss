@@ -5,7 +5,7 @@
   flex-direction: row;
   transition: color 0.2s ease-out, background 0.2s ease-out;
   margin: 0 auto;
-  max-width: $maxWidth-6xl;
+  max-width: $maxWidth-7xl;
   
   @media screen and (max-width: 768px) {
     display: block;
@@ -32,6 +32,16 @@
 
 .global_header {
   margin-bottom: $spacing-12;
+  margin: 1px auto;
+  max-width: $maxWidth-7xl;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.global_header h1 {
+  margin: 2rem;
 }
 
 .main_heading {

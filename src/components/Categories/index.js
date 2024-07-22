@@ -50,18 +50,19 @@ const Categories = ({ location }) => {
     <nav className={styles.nav} role="navigation">
         <ol className={styles.nav_links}>
             <li>
-                <Link to="/">All Posts <small>({AllPostsCount})</small></Link>
+                <Link to="/"><b>All Posts</b><small>({AllPostsCount})</small></Link>
             </li>
             {categories.map(({ slug, category, count, depth }) => (
-             <li
-                className={`${styles.nav_link} ${depth ? styles.sub : ''} ${currentCategory === slug ? styles.current : ''}`}
-                key={category}
-            >
-                <Link to={`/${slug}`}>
-                    {category} <small>({count})</small>
-                </Link>
-            </li>
+                <li
+                    className={`${styles.nav_link} ${depth ? styles.sub : ''} ${currentCategory === slug ? styles.current : ''}`}
+                    key={category}
+                >
+                    <Link to={`/${slug}`}>
+                        {category} <small>({count})</small>
+                    </Link>
+                </li>
             ))}
+            
         </ol>
     </nav >
     )

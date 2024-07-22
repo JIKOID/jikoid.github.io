@@ -17,7 +17,9 @@ export default function Header({ location, title }) {
         )
     } else {
         header = (
-        <Link className={styles.header_link_home} to="/">{title}</Link>
+        <h1 className={styles.header_link_home}>
+            <Link to="/">{title}</Link>
+        </h1>
         )
     }
 

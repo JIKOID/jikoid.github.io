@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: $maxWidth-7xl;
+  max-width: $maxWidth-8xl;
   min-height: 100vh;
   
   @media screen and (max-width: 768px) {
@@ -34,7 +34,7 @@
 .global_header {
   margin-bottom: $spacing-12;
   margin: 1px auto;
-  max-width: $maxWidth-7xl;
+  max-width: $maxWidth-8xl;
 
   @media screen and (max-width: 768px) {
     text-align: center;
@@ -60,18 +60,7 @@
   font-size: $fontSize-6;
 }
 
-// headroom
-@media screen and (max-width: 768px) {
-  .global_header {
-    &.headroom {
-      will-change: transform;
-      transition: transform 200ms ease-out, color 0.2s ease-out, background 0.2s ease-out;
-    }
-    &.headroom--pinned {
-        transform: translateY(0%);
-    }
-    &.headroom--unpinned {
-        transform: translateY(-100%);
-    }
-  }
+.right_sidebar {
+  position: relative;
+  top: 260px;
 }

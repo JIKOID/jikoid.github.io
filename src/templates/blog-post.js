@@ -18,7 +18,7 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} toc={post.tableOfContents}>
       <article
         className="blog-post"
         itemScope
@@ -32,7 +32,6 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
           timeToRead={post.timeToRead}
           categories={post.frontmatter.categories}
         />
-        <TableOfContents toc={post.tableOfContents} />
         <Content post={post} />
         <Navigation previous={previous} next={next} />
         <Footer />

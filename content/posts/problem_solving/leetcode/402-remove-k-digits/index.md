@@ -91,7 +91,8 @@ i = 1
 
 <br>
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/3c28956a-a404-4e05-85fe-c72b12688d9a">
+<!-- <img width="400" alt="image" src="https://github.com/user-attachments/assets/3c28956a-a404-4e05-85fe-c72b12688d9a"> -->
+<img width="400" alt="image" src="image.png">
 
 <br><br>
 
@@ -146,7 +147,8 @@ for digit in num:
 
 <br>
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/4d1a187e-3c60-4848-a1c5-bad673ad7175">
+<!-- <img width="500" alt="image" src="https://github.com/user-attachments/assets/4d1a187e-3c60-4848-a1c5-bad673ad7175"> -->
+<img width="500" alt="image" src="image2.png">
 
 <br><br>
 
@@ -194,8 +196,9 @@ class Solution:
 
         return "".join(num_list).lstrip("0") if "".join(num_list).lstrip("0") else "0"
 ```
+<!-- <img width="600" alt="image" src="https://github.com/user-attachments/assets/39e55acd-8e1a-4582-9bf1-759dace382bb"> -->
+<img width="600" alt="image" src="image3.png">
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/39e55acd-8e1a-4582-9bf1-759dace382bb">
 
 ### Stack 으로 푼 답안
 
@@ -222,4 +225,5 @@ class Solution:
         return "".join(stack[:-k] if k else stack).lstrip('0') or '0'
 ```
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/a385f212-a262-4a6d-8845-6612923a95b9">
+<!-- <img width="600" alt="image" src="https://github.com/user-attachments/assets/a385f212-a262-4a6d-8845-6612923a95b9"> -->
+<img width="600" alt="image" src="image4.png">

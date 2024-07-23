@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby"
 import TagList from "../../components/TagList"
-import { author } from "../../../blog-config"
 import * as styles from "./Article.module.scss"
 
 const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, categories }) => {

@@ -1,0 +1,69 @@
+@import "src/assets/scss/variables";
+
+.global_header {
+  margin-bottom: $spacing-12;
+  margin: auto;
+  max-width: $maxWidth-8xl;
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px); // blur 효과
+    box-shadow: 1px 0 0;
+    border-bottom: 1px solid $color-grey;
+    min-height: auto;
+    border-right: 0;
+    background: var(--bg);
+    z-index: 1;
+
+    .header_title {
+        text-align: center;
+    }
+
+    .nav-toggle.active ~ .headroom_nav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      .nav {
+        display: block;
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+    }
+
+    &.headroom {
+      will-change: transform;
+      transition: transform 200ms ease-out, color 0.2s ease-out, background 0.2s ease-out;
+    }
+    &.headroom--pinned {
+        transform: translateY(0%);
+    }
+    &.headroom--unpinned {
+        transform: translateY(-100%);
+    }
+  }
+}
+
+.global_header h1 {
+  padding: 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.main_heading {
+  font-size: $fontSize-6;
+  margin: 0;
+}
+
+.header_link_home {
+  text-decoration: none;
+  font-size: $fontSize-6;
+}
+
+.headroom_nav {
+  display: none;
+}

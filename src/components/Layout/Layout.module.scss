@@ -20,7 +20,7 @@
   width: -webkit-fill-available;
 
   @media screen and (max-width: 768px) {
-    padding-top: 0;
+    padding-top: 80px;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     max-width: calc(100% - 228px);
@@ -29,35 +29,6 @@
 
 .content_wrapper[data-is-root-path="true"] .bio {
   margin-bottom: $spacing-20;
-}
-
-.global_header {
-  margin-bottom: $spacing-12;
-  margin: 1px auto;
-  max-width: $maxWidth-8xl;
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
-    border-bottom: 1px solid $color-grey;
-  }
-}
-
-.global_header h1 {
-  padding: 2rem;
-
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
-  }
-}
-
-.main_heading {
-  font-size: $fontSize-6;
-  margin: 0;
-}
-
-.header_link_home {
-  text-decoration: none;
-  font-size: $fontSize-6;
 }
 
 .right_sidebar {

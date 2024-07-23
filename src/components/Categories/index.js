@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
-import * as styles from "./Categories.module.scss"
+import "./Categories.scss"
 
 const Categories = ({ location }) => {
     const data = useStaticQuery(graphql`
@@ -47,14 +47,14 @@ const Categories = ({ location }) => {
 
     return (
 
-    <nav className={styles.nav} role="navigation">
-        <ol className={styles.nav_links}>
+    <nav className="nav" role="navigation">
+        <ol className="nav_links">
             <li>
                 <Link to="/"><b>All Posts</b> <small>({AllPostsCount})</small></Link>
             </li>
             {categories.map(({ slug, category, count, depth }) => (
                 <li
-                    className={`${styles.nav_link} ${depth ? styles.sub : ''} ${currentCategory === slug ? styles.current : ''}`}
+                    className={`nav_link ${depth ? "sub" : ''} ${currentCategory === slug ? "current" : ''}`}
                     key={category}
                 >
                     <Link to={`/${slug}`}>

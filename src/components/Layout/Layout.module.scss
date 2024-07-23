@@ -44,6 +44,10 @@
 
 .global_header h1 {
   padding: 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 }
 
 .main_heading {

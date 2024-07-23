@@ -16,7 +16,7 @@ const CategoryTemplate = ({ data, location, pageContext }) => {
                     const { title, date, description, tags, categories } = node.frontmatter
                     const { slug } = node.fields
                     const { excerpt } = node.excerpt
-                    const { timeToRead } = node.timeToRead
+                    const timeToRead = node.timeToRead
 
                     return (
                         <div>

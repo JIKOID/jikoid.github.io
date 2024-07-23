@@ -16,6 +16,10 @@
   text-shadow: 0 0 20px rgb(2, 7, 21);
 }
 
+.post_list_item span a:hover {
+  text-shadow: 0 0 5px rgb(2, 7, 21);
+}
+
 .post_list_item p {
   margin-bottom: $spacing-0;
 }

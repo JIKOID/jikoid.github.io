@@ -1,11 +1,14 @@
 import * as React from "react";
 import { Link } from "gatsby"
 import TagList from "../../components/TagList"
-
+import { author } from "../../../blog-config"
 import * as styles from "./Article.module.scss"
 
 const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, categories }) => {
     const [mainCategory, subCategory] = categories.split('/')
+
+    const mainCategoryUrl = '/categories/' + mainCategory
+    const subCategoryUrl = '/categories/' + categories
 
     return (
         <article
@@ -15,10 +18,19 @@ const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, ca
             >
             <header>
                 {subCategory ? 
-                    <div className={styles.article_categories}><span>{mainCategory}{" ﹥ "}{subCategory}</span></div>
-                    :
-                    <div className={styles.article_categories}><span>{mainCategory}</span></div>
+                    <div className={styles.article_categories}>
+                        <span>
+                            <Link to={mainCategoryUrl}>{mainCategory}</Link>{" ﹥ "}<Link to={subCategoryUrl}>{subCategory}</Link>
+                        </span>
+                    </div>
+                :
+                    <div className={styles.article_categories}>
+                        <span>
+                            <Link to={mainCategoryUrl}>{mainCategory}</Link>
+                        </span>
+                    </div>
                 }
+                
                 <h2>
                     <Link to={slug} itemProp="url">
                     <span itemProp="headline">{title}</span>

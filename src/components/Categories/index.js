@@ -50,7 +50,7 @@ const Categories = ({ location }) => {
     <nav className={styles.nav} role="navigation">
         <ol className={styles.nav_links}>
             <li>
-                <Link to="/"><b>All Posts</b><small>({AllPostsCount})</small></Link>
+                <Link to="/"><b>All Posts</b> <small>({AllPostsCount})</small></Link>
             </li>
             {categories.map(({ slug, category, count, depth }) => (
                 <li

@@ -12,6 +12,14 @@
   margin: 1rem 0rem;
 }
 
+.post_header span a {
+  text-decoration: none;
+}
+
+.post_header span a:hover {
+  text-shadow: 0 0 5px rgb(2, 7, 21);
+}
+
 .main_heading {
   font-size: $fontSize-6;
   margin: 0;

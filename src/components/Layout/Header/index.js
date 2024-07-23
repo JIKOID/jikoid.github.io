@@ -2,6 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { Helmet } from 'react-helmet'
 
+import NavToggle from "../HeaderHamburger"
+
 import * as styles from "../Layout.module.scss"
 
 export default function Header({ location, title }) {
@@ -27,12 +29,7 @@ export default function Header({ location, title }) {
         <header className={styles.global_header}>
             <title>{title}</title>
 
-            <Helmet>
-                {/* Google Search Console */}
-                <meta name="google-site-verification" content="bYwWlKrL-ExMKgQ4rtapH7RM8CwPSBMmKpfMxjpTwcM" />
-                {/* Naver Web Master */}
-                <meta name="naver-site-verification" content="ffae897975016f2b8829e0672767e6e41a4c2bd7" />
-            </Helmet>
+            <NavToggle />
             
             {header}
         </header>

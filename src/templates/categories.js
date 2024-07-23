@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
@@ -43,10 +43,10 @@ export default CategoryTemplate;
 export const Head = ({ pageContext }) => {
     const category = pageContext.category.slice(2, -1)
     
-    const title = `'${category}' Posts`
+    const categoryTitle = `'${category}' Posts`
 
     return (
-        <Seo title={title} />
+        <Seo title={categoryTitle} />
     )
 }
 

@@ -1,18 +1,17 @@
 import React, { useCallback, useRef } from "react"
 
-import "./HeaderHamburger.module.scss"
+import "./HeaderHamburger.scss"
 
 const NavToggle = () => {
-  const buttonRef = React.useRef();
-
-  const handleToggle = React.useCallback(() => {
-    buttonRef.current.classList.toggle('active');
-  }, [buttonRef])
+  const refButton = useRef(null)
+  const handleToggle = useCallback(() => {
+    refButton.current.classList.toggle('active');
+  }, [refButton])
 
   return (
     <button
       className="nav-toggle"
-      ref={buttonRef}
+      ref={refButton}
       onClick={handleToggle}
       aria-label="nav-toggle"
     />

@@ -2,7 +2,6 @@
 
 $color: $color-primary;
 $duration: .3s;
-
 .nav-toggle {
 	display: none;
 	@media screen and (max-width: 768px) {
@@ -10,8 +9,8 @@ $duration: .3s;
 	}
 
 	position: fixed;
-	top: 13px;
-	left: 13px;
+	top: 22px;
+	left: 22px;
 	width: 24px;
 	height: 24px;
 	border: none;
@@ -20,7 +19,6 @@ $duration: .3s;
 	transition: background-size $duration ease-in-out;
 	cursor: pointer;
 	outline: none;
-
 	&:before,
 	&:after {
 		display: block;

@@ -9,12 +9,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    backdrop-filter: blur(5px); // blur 효과
-    box-shadow: 1px 0 0;
+    background-color: white;
     border-bottom: 1px solid $color-grey;
     min-height: auto;
-    border-right: 0;
-    background: var(--bg);
     z-index: 1;
 
     .header_title {

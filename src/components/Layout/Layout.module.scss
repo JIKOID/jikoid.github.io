@@ -3,9 +3,9 @@
 .container {
   display: flex;
   flex-direction: row;
-  transition: color 0.2s ease-out, background 0.2s ease-out;
-  margin: 0 auto;
+  margin: auto;
   max-width: $maxWidth-7xl;
+  min-height: 100vh;
   
   @media screen and (max-width: 768px) {
     display: block;
@@ -13,6 +13,7 @@
 }
 
 .content_wrapper {
+  flex: 1;
   margin: $spacing-0;
   max-width: $maxWidth-wrapper;
   padding: $spacing-3 $spacing-3;
@@ -42,7 +43,7 @@
 }
 
 .global_header h1 {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 .main_heading {

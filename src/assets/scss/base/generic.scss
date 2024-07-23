@@ -6,6 +6,8 @@
 :after,
 :before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -13,19 +15,28 @@ html {
   font-size: $fontSize-root;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 body {
   font-family: $font-body;
   font-size: $fontSize-1;
   color: $color-text;
-  padding-top: 60px; /* Adjust this value based on the height of your header */
+  height: 100%;
+}
+
+#wrap {
+  height: 100%;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
 }
 
 footer {
   padding: $spacing-6 $spacing-0;
   max-width: $maxWidth-7xl;
-  margin-bottom: $spacing-12;
   margin: 1px auto;
 }
 
@@ -44,8 +55,6 @@ h4,
 h5,
 h6 {
   font-family: $font-heading;
-  margin-top: $spacing-12;
-  margin-bottom: $spacing-6;
   line-height: $lineHeight-tight;
   letter-spacing: -0.025em;
 }
@@ -63,6 +72,8 @@ h1 {
   font-weight: $fontWeight-black;
   font-size: $fontSize-6;
   color: $color-heading-black;
+  margin-block-start: 0; /* Removes the top margin */
+  margin-block-end: 0;   /* Removes the bottom margin */
 }
 
 h2 {

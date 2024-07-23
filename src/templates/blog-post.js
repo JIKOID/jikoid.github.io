@@ -12,11 +12,10 @@ import Navigation from "../components/Post/Navigation"
 import Footer from "../components/Post/Footer"
 import Utterances from "../components/Utterances"
 
-const BlogPostTemplate = ({
-  data: { previous, next, site, markdownRemark: post },
-  location,
-}) => {
-  const siteTitle = site.siteMetadata?.title || `Title`
+const BlogPostTemplate = ({data, location, pageContext}) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const { previous, next } = pageContext
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -56,9 +55,7 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
+    $slug: String!
   ) {
     site {
       siteMetadata {
@@ -66,7 +63,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
       html
@@ -79,22 +76,6 @@ export const pageQuery = graphql`
       }
       tableOfContents
       timeToRead
-    }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
     }
   }
 `

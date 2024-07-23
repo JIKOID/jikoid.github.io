@@ -2,7 +2,7 @@
 date: "2024-07-12"
 title: "Leetcode 1191. K-Concatenation Maximum Sum (Python3)"
 description: "😤 Leetcode 1191. K-Concatenation Maximum Sum 문제 풀이"
-categories: ["알고리즘", "leetcode"]
+categories: 알고리즘/leetcode
 tags: ["problem_solving", "leetcode", "python"]
 ---
 

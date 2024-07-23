@@ -1,0 +1,15 @@
+.sidebar {
+    position: sticky;
+    top: 100px;
+    max-width: auto;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: flex;
+        position: static;
+        justify-content: center;
+        padding: 1rem;
+    }
+}

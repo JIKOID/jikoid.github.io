@@ -2,7 +2,7 @@
 date: "2024-06-12"
 title: "Github 블로그 toc 변경하기 (Minimal Mistakes)"
 description: "Github Jekyll 블로그에서 ToC 의 스타일을 변경한 내용입니다."
-categories: ["blog", "jekyll"]
+categories: blog/jekyll
 tags: ["github", "minimal_mistakes", "toc"]
 ---
 

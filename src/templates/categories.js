@@ -42,9 +42,11 @@ export default CategoryTemplate;
 
 export const Head = ({ pageContext }) => {
     const category = pageContext.category.slice(2, -1)
+    
+    const title = `'${category}' Posts`
 
     return (
-        <Seo title={category} />
+        <Seo title={title} />
     )
 }
 

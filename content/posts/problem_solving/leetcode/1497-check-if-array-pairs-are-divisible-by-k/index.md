@@ -59,7 +59,7 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
 
 * 제출 결과  
   
-    <img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/1e8441f9-34c6-49ae-a638-af4afe6fed97">
+    ![](image.png)
 
 <br><br>
 

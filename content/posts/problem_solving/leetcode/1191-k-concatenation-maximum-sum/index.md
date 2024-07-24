@@ -71,7 +71,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 - Runtime Error
 
-    <img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/d505f6fe-fa3e-4562-ac3c-26d8e48958d1">
+    ![](image.png)
 
 <br>
 
@@ -79,7 +79,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 - Time Limit Exceeded
 
-    <img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/778ffefa-8c30-4eda-b769-4781097868aa">
+    ![](image2.png)
 
 <br>
 
@@ -107,7 +107,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    <img width="300" alt="image" src="https://github.com/user-attachments/assets/f93ad118-9262-4c3c-a966-fca2ff147f93">
+    ![](image3.png)
 
     <br>
 
@@ -122,7 +122,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    <img width="300" alt="image" src="https://github.com/user-attachments/assets/724c54a3-754d-4275-8c0f-54ebb381c967">
+    ![](image4.png)
 
     <br>
     
@@ -139,7 +139,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    <img width="300" alt="image" src="https://github.com/user-attachments/assets/fb9e0320-1106-4f18-b5fd-b09cecf93016">
+    ![](image5.png)
 
     <br>
 
@@ -156,7 +156,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    <img width="720" alt="image" src="https://github.com/user-attachments/assets/dc25a318-c1ca-47c2-a27c-6bd8978c53f2">
+    ![](image6.png)
 
     <br>
 
@@ -173,7 +173,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    <img width="400" alt="image" src="https://github.com/user-attachments/assets/5728efd8-8939-4518-88bb-8418a677b91a">
+    ![](image7.png)
 
     <br>
 
@@ -191,7 +191,7 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    <img width="600" alt="image" src="https://github.com/user-attachments/assets/a843742b-cc53-48dd-bbcc-072c3ed50dc2">
+    ![](image8.png)
 
     <br>
 
@@ -232,9 +232,9 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/c5d3c01d-0168-4f5b-9238-03692664d946">
+![](image9.png)
 
-<br><br>
+<br>
 
 따라서, 이와 같은 코드는 다음과 같이 작성해주었다.  
 
@@ -384,3 +384,9 @@ class Solution:
             else:
                 return max(max_one_sum, max_pre_sum + max_suf_sum + max_mid_sum) % modulo
 ```
+
+<br>
+
+- 실행 결과  
+
+![](image10.png)

@@ -10,9 +10,9 @@ Gatsby 를 통해 블로그를 만들면서 다른 분들이 lighthouse 를 통�
 
 그래서 나도 궁금해 지금 만들고 있는 블로그의 성능 검사를 진행해보았다.  
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/81e106b2-b4a4-406c-a022-491aa8004882">
+![](image.png)
 
-<br><br>
+<br>
 
 그런데 생각지도 못하게 100점이란 점수가 나와서 놀랬다. 그리고 Desktop 에서 100점이지만 모바일 환경에서는 96 점이 나왔다.  
 

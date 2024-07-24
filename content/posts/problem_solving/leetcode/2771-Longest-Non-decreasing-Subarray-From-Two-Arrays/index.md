@@ -96,18 +96,18 @@ https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/
 
 예를 들어, 아래와 같이 nums1, nums2 의 배열이 주어진다고 생각해보자.  
 
-<img width="300" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/adda6060-92f6-4548-9e84-748d408aad32" />
+![](image.png)
 
-<br><br>
+<br>
 
 두 배열을 통해 만들어질 수 있는 nums3 의 Subarray 가 될 수 있는 모든 경우에 대해서  
 <U>`nums1` 의 원소를 가져오는 경우</U>와 <U>`nums2` 의 원소를 가져오는 경우</U>로 구분해서 각각의 경우를 따져보았다.  
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/d777de9b-c253-4482-8548-85032d0a1908" />
+![](image2.png)
 
-<br><br>
+<br>
 
 위의 그림에 대해서 설명하자면 다음과 같다.  
   
@@ -145,9 +145,9 @@ https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/
 이렇게 모든 경우의 수를 확인하고 나서 각 원소마다 길이가 큰 값이 그 원소 위치에서의 Subarray 의 최대 길이가 된다고 생각할 수 있다.  
 따라서, 아래와 같이 Subarray 의 길이가 최대가 되는 `nums3` 배열을 확인할 수 있다.  
 
-<img width="600" alt="image" src="https://github.com/JIKOID/jikoid.github.io/assets/48994100/360689b1-7aab-4250-abf3-1ea5c95e85b1" />
+![](image3.png)
 
-<br><br>  
+<br>
 
 이제 이와 같은 과정을 코드로 작성해주면 된다.  
 

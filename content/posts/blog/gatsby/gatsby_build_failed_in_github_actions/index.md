@@ -16,21 +16,21 @@ Gatsby 를 통해 포스트를 작성하고나서 배포하려고 하는데 Gith
 
 <br>
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/0b9c4cac-db29-4453-8808-0ebbb5566334">
+![](image.png)
 
-<br><br>
+<br>
 
 그리고 아래의 사진과 같이 Gatsby Build 하는 부분에서 실패한 것을 확인했다.  
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/b3d7f54b-4c13-4466-b40f-0e8dd9d2bf79">
+![](image2.png)
 
-<br><br>
+<br>
 
 그래서 왜 에러가 발생했는지 확인해보는데 자세한 에러가 나와있지 않았다.  
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/9a6b9002-e907-4117-b884-def7ff9d192a">
+![](image3.png)
 
-<br><br>
+<br>
 
 아래는 raw logs 이다.  
 
@@ -78,9 +78,9 @@ Gatsby 를 통해 포스트를 작성하고나서 배포하려고 하는데 Gith
 
 <br>
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/b7c0746c-6b28-490b-9b6d-5a299cbbb47f">
+![](image4.png)
 
-<br><br>
+<br>
 
 위의 사진과 같이 포스트만 제거했는데 배포가 제대로 되었다... 왜지...?
 
@@ -135,9 +135,9 @@ repository 를 확인해보니 star 5개.. 그리고 3년 전 업데이트된 �
 
 <br>
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/80f17801-03d6-4469-bb99-9e5980135b22">
+![](image5.png)
 
-<br><br>
+<br>
 
 ## 정리
 

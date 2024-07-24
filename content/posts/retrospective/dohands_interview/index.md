@@ -6,10 +6,12 @@ categories: 제이로그/면접후기
 tags: ["두핸즈", "1차 면접", "면접 후기", "면접 합격"]
 ---
 
-<div style="text-align: center;">
-    <img width="200" alt="두핸즈 로고" src="https://github.com/user-attachments/assets/95303ccd-70be-40db-bab3-e7d62a93c7b3">
+<div style="padding: 0 250px;">
+    <img src="image.png">
     <p style="font-size: 10px; text-align: center; opacity: 0.5;">두핸즈 로고</p>
 </div>
+
+<br>
 
 두핸즈에 서류를 합격하고 지난 주 두핸즈 1차 면접을 보게 되었다.  
 1차 면접은 화상 면접으로 진행되었는데 화상 면접을 어떻게 할지 고민하던 중 서울시에서 지원해주는 청년활력소 라는 곧에서 화상면접 장소를 무료로 제공해준다고 해서 바로 예악하게 되었다.  

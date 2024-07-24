@@ -43,9 +43,11 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 
 다음과 같이 `초기화` 연산을 통해 배열을 만들어준다.  
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/8fb64ed1-e263-4ba4-9ff6-ff69be85593a">  
+<div style="padding: 0 150px;">
+    <img src="image.png">
+</div>
   
-<br><br>  
+<br>
   
 위의 배열에서 다음과 같이 `Union 연산` 을 수행해보았다.  
 
@@ -59,7 +61,7 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/5f8cb3b5-86f3-4290-8e59-172d6daa0842">
+![](image2.png)
 
 <br><br>
 
@@ -70,9 +72,11 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 
 <br>
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/7588c021-7a84-425a-910a-28d4cb300960">
+<div style="padding: 0 150px;">
+    <img src="image3.png">
+</div>
 
-<br><br>
+<br>
 
 이렇게 배열로 Union-Find 를 구현할 수 있지만 Union 연산을 수행할 때 모든 원소를 순회하기 때문에 시간 복잡도는 O(N) 이 된다.  
 물론 Find 연산의 시간복잡도는 O(1) 로 빠르지만 트리 구조를 통해 더 빠른 Union 연산을 수행할 수 있다.  
@@ -87,7 +91,7 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/e2a8cfe8-d4a5-44ad-a697-91abae3d3e8a">
+![](image4.png)
 
 <br><br>
 
@@ -112,7 +116,7 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/dc81fc86-12b1-4f79-aec6-ce3396834608">
+![](image5.png)
 
 <br><br>
 
@@ -122,9 +126,9 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 이렇게 Union 연산을 합쳐진 트리 구조에서 `Find 연산` 을 하려면 찾는 원소의 포인터를 따라가 루트 노드를 찾으면 된다.  
 이때, 시간복잡도는 `트리의 높이에 따라 비례` 하는 것을 알 수 있다.  
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/d1fe4551-1d2e-49bd-bb95-258daca78620">
+![](image6.png)
 
-<br><br>
+<br>
 
 ### 배열과 트리 비교
 
@@ -145,7 +149,9 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 최악의 경우 완전 비대칭 트리가 되어 버리면 N 개의 노드가 있을 경우 트리의 높이가 N-1 인 연결 리스트와 같은 트리 구조가 되어 Find 연산의 시간복잡도가 O(N) 이 되어 버린다.  
 그래서 최악의 경우 트리 구조를 사용했을 경우 배열보다 비효율적이게 된다.  
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/10959343-2ec9-4969-8a05-28560b5a8493">
+<div style="padding: 0 150px;">
+    <img src="image7.png">
+</div>
 
 <br><br>
 
@@ -170,9 +176,9 @@ Find 연산을 수행할 때 포인터를 통해 루트 노드를 찾는 과정�
 이러한 과정에서 루트 노드를 찾고자 하는 집합 노드의 루트 노드로 만들어 찾는 과정에서 중간 노드를 생략하는 방법이라고 할 수 있다.  
 따라서 중간 노드가 생략되어 버리기 때문에 경로가 압축되었다고 할 수 있다.  
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/b26eaed3-76a1-4b50-87e5-374053aa1040">
+![](image8.png)
 
-<br><br>
+<br>
 
 위의 이미지와 같이 경로를 압축해 2번 집합이나 3번 집합 둘 다 1번 집합을 루트 노드로 되어있기 때문에 3번 집합의 경우 2번 집합을 거치지 않아도 된다는 점을 통해 루트 노드를 찾는 경로를 압축시켜버렸다. 
 그 결과 트리의 높이가 2 에서 1 로 낮아지게 되어 더 빠르게 찾을 수 있다.   

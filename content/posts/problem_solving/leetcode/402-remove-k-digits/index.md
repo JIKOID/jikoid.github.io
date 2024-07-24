@@ -91,10 +91,9 @@ i = 1
 
 <br>
 
-<!-- <img width="400" alt="image" src="https://github.com/user-attachments/assets/3c28956a-a404-4e05-85fe-c72b12688d9a"> -->
-<img width="400" alt="image" src="image.png">
+![](image.png)
 
-<br><br>
+<br>
 
 따라서, 다음과 같이 k 가 있는 경우 제외를 시켜준다.  
 
@@ -147,10 +146,9 @@ for digit in num:
 
 <br>
 
-<!-- <img width="500" alt="image" src="https://github.com/user-attachments/assets/4d1a187e-3c60-4848-a1c5-bad673ad7175"> -->
-<img width="500" alt="image" src="image2.png">
+![](image2.png)
 
-<br><br>
+<br>
 
 비교가 끝나고나서 k 가 남아있는 경우에는 리스트에서 했던 방식으로 뒤에서 부터 정수를 제외시켜주고 문자를 합쳐준 다음 앞에 있는 "0" 을 제외시켜주었다.  
 

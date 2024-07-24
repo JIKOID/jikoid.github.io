@@ -107,7 +107,9 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    ![](image3.png)
+    <div style="padding: 0 150px;">
+        <img src="image3.png">
+    </div>
 
     <br>
 
@@ -122,9 +124,9 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    ![](image4.png)
-
-    <br>
+    <div style="padding: 0 150px;">
+        <img src="image4.png">
+    </div>
     
 <br>
 
@@ -139,9 +141,9 @@ https://leetcode.com/problems/k-concatenation-maximum-sum/description/
 
     <br>
 
-    ![](image5.png)
-
-    <br>
+    <div style="padding: 0 150px;">
+        <img src="image5.png">
+    </div>
 
 <br>
 

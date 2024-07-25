@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const Seo = ({ description, title, children }) => {
   const { site, featuredImage } = useStaticQuery(
@@ -46,6 +47,16 @@ const Seo = ({ description, title, children }) => {
       <meta property="og:image" content={ogImage.images.fallback.src} />
       <meta property="og:image:width" content={ogImage.width} />
       <meta property="og:image:height" content={ogImage.height} />
+
+      <Helmet>
+        {/* Google Search Console */}
+        <meta name="google-site-verification" content="bYwWlKrL-ExMKgQ4rtapH7RM8CwPSBMmKpfMxjpTwcM" />
+        {/* Naver Web Master */}
+        <meta name="naver-site-verification" content="ffae897975016f2b8829e0672767e6e41a4c2bd7" />  
+        {/* Google Adsense */}
+        <meta name="google-adsense-account" content="ca-pub-4021090588937253" />
+      </Helmet>
+
       {children}
     </>
   )

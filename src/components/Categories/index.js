@@ -6,12 +6,12 @@ import "./Categories.scss"
 const Categories = ({ location }) => {
     const data = useStaticQuery(graphql`
         query CategoryQuery {
-        categories: allMarkdownRemark(limit: 2000) {
-            group(field: frontmatter___categories) {
-            fieldValue
-            totalCount
+            categories: allMarkdownRemark(limit: 2000) {
+                group(field: frontmatter___categories) {
+                fieldValue
+                totalCount
+                }
             }
-        }
         }
     `)
 
@@ -39,7 +39,8 @@ const Categories = ({ location }) => {
         depth: category.split('/').length - 1
     }))
 
-    const slug = location.pathname.slice(1);
+    const slug = decodeURI(location.pathname.slice(1));
+
     const currentCategory = categories.reduce((current, next) => {
         if (~slug.indexOf(next.slug)) return next.slug;
         return current;

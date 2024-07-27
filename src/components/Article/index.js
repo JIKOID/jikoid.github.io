@@ -6,8 +6,10 @@ import * as styles from "./Article.module.scss"
 const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, categories }) => {
     const [mainCategory, subCategory] = categories.split('/')
 
-    const mainCategoryUrl = '/categories/' + mainCategory
-    const subCategoryUrl = '/categories/' + categories
+    const mainCategoryUrl = `/${mainCategory}` 
+    const subCategoryUrl = `/${categories}`
+
+    console.log(categories)
 
     return (
         <article

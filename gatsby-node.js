@@ -93,7 +93,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       category += splitedCategory.shift()
 
       createPage({
-        path: `/categories/${category}`,
+        path: category,
         component: categoryTemplate,
         context: {
           category: `^/${category}/`,

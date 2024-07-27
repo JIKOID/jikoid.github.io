@@ -33,7 +33,7 @@ const Categories = ({ location }) => {
         return categoryMap;
     }, new Map())
     .forEach((count, category) => categories.push({
-        slug: `categories/${category}`,
+        slug: category,
         category: category.split('/').pop(),
         count,
         depth: category.split('/').length - 1

@@ -2,7 +2,7 @@
 date: "2024-07-26 15:37"
 title: "Leetcode 2531. Make Number of Distinct Characters Equal (Python3)"
 description: "😤 Leetcode 2531. Make Number of Distinct Characters Equal 문제 풀이"
-categories: 알고리즘/leetcode
+categories: algorithm/leetcode
 tags: ["problem_solving", "leetcode", "python"]
 ---
 

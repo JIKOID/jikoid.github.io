@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import * as styles from "../Post.module.scss"
-
 import TagList from "../../TagList"
+import parsedCategories from "../../../utils/parsedCategories"
+import * as styles from "../Post.module.scss"
 
 
 export default function Header({ title, date, author, tags, timeToRead, categories }) {
@@ -16,7 +16,9 @@ export default function Header({ title, date, author, tags, timeToRead, categori
           {subCategory ? 
             <div className={styles.article_categories}>
                 <span>
-                    <Link to={mainCategoryUrl}>{mainCategory}</Link>{" ﹥ "}<Link to={subCategoryUrl}>{subCategory}</Link>
+                  <Link to={mainCategoryUrl} itemProp="url">{parsedCategories(mainCategory)}</Link>
+                  {" ﹥ "}
+                  <Link to={subCategoryUrl} itemProp="url">{parsedCategories(subCategory)}</Link>
                 </span>
             </div>
           :

@@ -2,7 +2,7 @@
 date: "2024-07-25 16:47"
 title: "Leetcode 2332. The Latest Time to Catch a Bus (Python3)"
 description: "😤 2332. The Latest Time to Catch a Bus 문제 풀이"
-categories: 알고리즘/leetcode
+categories: algorithm/leetcode
 tags: ["problem_solving", "leetcode", "python"]
 ---
 

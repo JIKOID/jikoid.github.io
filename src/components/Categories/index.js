@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
-
+import parsedCategories from "../../utils/parsedCategories"
 import "./Categories.scss"
 
 const Categories = ({ location }) => {
@@ -39,7 +39,7 @@ const Categories = ({ location }) => {
         depth: category.split('/').length - 1
     }))
 
-    const slug = decodeURI(location.pathname.slice(1));
+    const slug = location.pathname.slice(1);
 
     const currentCategory = categories.reduce((current, next) => {
         if (~slug.indexOf(next.slug)) return next.slug;
@@ -59,7 +59,7 @@ const Categories = ({ location }) => {
                     key={category}
                 >
                     <Link to={`/${slug}`}>
-                        {category} <small>({count})</small>
+                        {parsedCategories(category)} <small>({count})</small>
                     </Link>
                 </li>
             ))}

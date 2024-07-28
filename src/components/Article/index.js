@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby"
 import TagList from "../../components/TagList"
+import parsedCategories from "../../utils/parsedCategories"
 import * as styles from "./Article.module.scss"
 
 const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, categories }) => {
@@ -8,8 +9,6 @@ const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, ca
 
     const mainCategoryUrl = `/${mainCategory}` 
     const subCategoryUrl = `/${categories}`
-
-    console.log(categories)
 
     return (
         <article
@@ -21,7 +20,9 @@ const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, ca
                 {subCategory ? 
                     <div className={styles.article_categories}>
                         <span>
-                            <Link to={mainCategoryUrl}>{mainCategory}</Link>{" ﹥ "}<Link to={subCategoryUrl}>{subCategory}</Link>
+                            <Link to={mainCategoryUrl} itemProp="url">{parsedCategories(mainCategory)}</Link>
+                            {" ﹥ "}
+                            <Link to={subCategoryUrl} itemProp="url">{parsedCategories(subCategory)}</Link>
                         </span>
                     </div>
                 :

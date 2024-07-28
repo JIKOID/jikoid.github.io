@@ -2,7 +2,7 @@
 date: "2024-07-25 09:51"
 title: "두핸즈 최종 면접 후기"
 description: "두핸즈 최종 면접에 대한 후기를 작성하였습니다."
-categories: 제이로그/면접후기
+categories: jaylog/interview
 tags: ["두핸즈", "데이터 엔지니어", "최종 면접", "면접 후기"]
 ---
 

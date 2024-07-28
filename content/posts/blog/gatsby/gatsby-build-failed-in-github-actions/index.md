@@ -1,5 +1,5 @@
 ---
-date: "2024-07-18"
+date: "2024-07-18 10:00"
 title: "Github Actions 에서 Gatsby Build 가 되지 않는 문제"
 description: "Gatsby 를 Github 에 배포하면서 build 가 되지 않는 문제에 대해서 정리하였습니다."
 categories: blog/gatsby

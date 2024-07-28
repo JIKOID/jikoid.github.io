@@ -1,5 +1,5 @@
 ---
-date: "2024-05-15"
+date: "2024-05-15 10:00"
 title: "Github 블로그 폰트 사이즈 변경하기 (Minimal Mistakes)"
 description: "Github jekyll 블로그에서 폰트 사이즈 변경한 내용입니다."
 categories: blog/jekyll
@@ -15,7 +15,7 @@ tags: ["github", "minimal_mistakes"]
 
 Font 사이즈는 `_sass/minimal-mistakes/_reset.scss` 에서 변경할 수 있다.
 
-```
+```html
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;

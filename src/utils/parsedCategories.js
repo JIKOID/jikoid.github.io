@@ -32,6 +32,9 @@ const parsedCategories = (category) => {
         case 'retrospective':
             parsed_category = '회고';
             break;
+        case 'programming-language':
+            parsed_category = '프로그래밍 언어';
+            break;
         default:
             parsed_category = category;
             break;

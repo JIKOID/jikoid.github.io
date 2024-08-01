@@ -9,7 +9,7 @@
  */
 
 const blogConfig = require("./blog-config")
-const { title, summary, description, author, siteUrl } = blogConfig
+const { title, summary, description, author, siteUrl, social } = blogConfig
 
 module.exports = {
   siteMetadata: {
@@ -20,11 +20,7 @@ module.exports = {
     },
     description: description,
     siteUrl: siteUrl,
-    social:  {
-      github: "jaynamm",
-      linkedIn: "jeonghyeon-nam-201a671a5",
-      tistory: "jaynamm",
-    },
+    social: social,
   },
   plugins: [
     {
@@ -194,47 +190,6 @@ module.exports = {
       },
     },
     // sitemap
-    // {
-    //   resolve: `gatsby-plugin-sitemap`,
-    //   options: {
-    //     query: `{
-    //       site {
-    //         siteMetadata {
-    //           siteUrl
-    //         }
-    //       }
-    //       allSitePage {
-    //         edges {
-    //           node {
-    //             path
-    //           }
-    //         }
-    //       }
-    //       allMarkdownRemark {
-    //         edges {
-    //           node {
-    //             fields {
-    //               slug
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }`,
-    //     resolveSiteUrl: () => siteUrl,
-    //     resolvePages: ({ allSitePage: { edges: allPages } }) => {
-    //       return allPages.map((edge) => {
-    //         return { ...edge.node, path: edge.node.path}
-    //       })
-    //     },
-    //     serializer: ({ path }) => {
-    //       return {
-    //         url: path,
-    //         changefreq: 'daily',
-    //         priority: 0.7,
-    //       }
-    //     },
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-advanced-sitemap-v5`,
       options: {
@@ -252,7 +207,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://jikoid.github.io/sitemap-index.xml`,
+        sitemap: `https://jikoid.github.io/sitemap-pages.xml`,
         policy: [{ 
           userAgent: '*', 
           allow: '/',

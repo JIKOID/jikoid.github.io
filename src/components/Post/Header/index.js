@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import TagList from "../../TagList"
 import parsedCategories from "../../../utils/parsedCategories"
 import * as styles from "../Post.module.scss"
+import { GoClock } from "react-icons/go";
+import { IoFolderOpenOutline } from "react-icons/io5";
 
 
 export default function Header({ title, date, author, tags, timeToRead, categories }) {
@@ -29,7 +31,9 @@ export default function Header({ title, date, author, tags, timeToRead, categori
             </div>
           }
           <h1 itemProp="headline">{title}</h1>
-          <b>@{author}</b> · {date} · {timeToRead} min read
+          <div className={styles.post_utils}>
+            <b>@{author}</b> · <IoFolderOpenOutline /> <span> {date}</span> · <GoClock /> <span>{timeToRead}분</span>
+          </div>
           <TagList tags={tags} />
         </header>
     )

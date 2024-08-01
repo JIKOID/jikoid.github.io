@@ -9,7 +9,7 @@
 }
 
 .post_header h1 {
-  margin: 1rem 0rem;
+  margin: 2rem 0rem;
 }
 
 .post_header span a {
@@ -62,7 +62,7 @@
 }
 
 .post-list-item header {
-  margin-bottom: $spacing-4;
+  margin: $spacing-4 $spacing-0;
 }
 
 /* Content */
@@ -170,4 +170,13 @@
   margin: $spacing-2 $spacing-0;
   color: $color-primary;
   font-size: 10px;
+}
+
+.post_utils {
+  font-size: 12px;
+
+  svg {
+    vertical-align: text-top;
+    font-size: 14px;
+  }
 }

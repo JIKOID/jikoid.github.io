@@ -49,8 +49,6 @@ const Seo = ({ description, title, children }) => {
       <meta property="og:image:height" content={ogImage.height} />
 
       <Helmet>
-        {/* Google Search Console */}
-        <meta name="google-site-verification" content="bYwWlKrL-ExMKgQ4rtapH7RM8CwPSBMmKpfMxjpTwcM" />
         {/* Naver Web Master */}
         <meta name="naver-site-verification" content="ffae897975016f2b8829e0672767e6e41a4c2bd7" />  
         {/* Google Adsense */}

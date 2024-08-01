@@ -3,6 +3,9 @@ import { Link } from "gatsby"
 import TagList from "../../components/TagList"
 import parsedCategories from "../../utils/parsedCategories"
 import * as styles from "./Article.module.scss"
+import { GoClock } from "react-icons/go";
+import { IoFolderOpenOutline } from "react-icons/io5";
+
 
 const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, categories }) => {
     const [mainCategory, subCategory] = categories.split('/')
@@ -38,7 +41,9 @@ const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, ca
                     <span itemProp="headline">{title}</span>
                     </Link>
                 </h2>
-                <small>{date} · {timeToRead} min read </small>
+                <div className={styles.acticle_utils}>
+                    <IoFolderOpenOutline /> <span> {date}</span> · <GoClock /> <span>{timeToRead}분</span>
+                </div>
             </header>
 
             <section>

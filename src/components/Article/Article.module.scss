@@ -27,16 +27,25 @@
 .post_list_item h2 {
   font-size: $fontSize-4;
   color: $color-primary;
-  margin-bottom: $spacing-2;
-  margin-top: $spacing-0;
+  margin: $spacing-4 $spacing-0;
 }
 
 .post_list_item header {
-  margin-bottom: $spacing-4;
+  margin: $spacing-4 $spacing-0;
 }
 
 .article_categories {
   margin: $spacing-2 $spacing-0;
   color: $color-primary;
   font-size: 10px;
+}
+
+.acticle_utils {
+  font-size: 10px;
+  margin: $spacing-4 $spacing-0;
+
+  svg {
+    vertical-align: text-top;
+    font-size: 12px;
+  }
 }

@@ -6,7 +6,7 @@ categories: jaylog/interview
 tags: ["두핸즈", "데이터 엔지니어", "1차 면접", "면접 후기", "면접 합격"]
 ---
 
-<div style="padding: 0 250px;">
+<div style="padding: 0 150px;">
     <img src="image.png">
     <p style="font-size: 10px; text-align: center; opacity: 0.5;">두핸즈 로고</p>
 </div>

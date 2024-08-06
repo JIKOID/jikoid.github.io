@@ -19,7 +19,7 @@ const CategoryTemplate = ({ data, location, pageContext }) => {
                     const timeToRead = node.timeToRead
 
                     return (
-                        <div>
+                        <div key={slug}>
                             <Article 
                                 slug={slug}
                                 title={title}

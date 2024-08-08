@@ -27,29 +27,27 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       {/* <Bio /> */}
-      <ol style={{ listStyle: `none` }}>
+      <div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const { date, description, tags, categories } = node.frontmatter
 
           return (
-            <li key={node.fields.slug}>
-              <div>
-                  <Article 
-                    slug={node.fields.slug}
-                    title={title}
-                    date={date}
-                    timeToRead={node.timeToRead}
-                    description={description}
-                    excerpt={node.excerpt}
-                    tags={tags}
-                    categories={categories}
-                  />
-              </div>
-            </li>
+            <div key={node.fields.slug}>
+                <Article 
+                  slug={node.fields.slug}
+                  title={title}
+                  date={date}
+                  timeToRead={node.timeToRead}
+                  description={description}
+                  excerpt={node.excerpt}
+                  tags={tags}
+                  categories={categories}
+                />
+            </div>
           )
         })}
-      </ol>
+      </div>
     </Layout>
   )
 }

@@ -43,7 +43,7 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 
 다음과 같이 `초기화` 연산을 통해 배열을 만들어준다.  
 
-<div style="padding: 0 150px;">
+<div style="padding: 0 30%;">
     <img src="image.png">
 </div>
   
@@ -72,7 +72,7 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 
 <br>
 
-<div style="padding: 0 150px;">
+<div style="padding: 0 30%;">
     <img src="image3.png">
 </div>
 
@@ -149,15 +149,15 @@ Union 연산과 Find 연산이 필요해 `Union-Find 알고리즘` 이라고 부
 최악의 경우 완전 비대칭 트리가 되어 버리면 N 개의 노드가 있을 경우 트리의 높이가 N-1 인 연결 리스트와 같은 트리 구조가 되어 Find 연산의 시간복잡도가 O(N) 이 되어 버린다.  
 그래서 최악의 경우 트리 구조를 사용했을 경우 배열보다 비효율적이게 된다.  
 
-<div style="padding: 0 150px;">
+<div style="padding: 0 20%;">
     <img src="image7.png">
 </div>
 
 <br><br>
 
-따라서 이와 같은 문제가 발생하면 다음과 같이 두 가지 최적화 방법을 통해 방지할 수 있다.  
+따라서 이와 같은 문제가 발생하면 다음과 같이 **두 가지 최적화 방법**을 통해 방지할 수 있다.  
 
-### Union 연산 최적화 - union-by-rank
+### Union 연산 최적화
 
 Union 연산을 최적화 하는 방법으로 `union-by-rank` 가 있다.  
 Union 연산을 수행하는 과정에서 **<U>항상 높이가 더 낮은 트리를 높은 트리 밑에 넣어준다.</U>**  
@@ -169,7 +169,7 @@ Union 연산을 수행하는 과정에서 **<U>항상 높이가 더 낮은 트�
 
 <br>
 
-### Find 연산 최적화 - 경로 압축 (Path Compression)
+### Find 연산 최적화
 
 Find 연산을 최적화 하는 방법으로 `경로 압축 (Path Compression)` 이 있다.  
 Find 연산을 수행할 때 포인터를 통해 루트 노드를 찾는 과정에서 트리의 높이에 비례해서 연산을 수행하게 된다.  

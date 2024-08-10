@@ -1,9 +1,9 @@
 import * as React from "react"
-import * as styles from "../Post.module.scss"
+import "../Post.scss"
 
 const Content = ({ post }) => {
     return (
-        <div className={styles.content}>
+        <div className="content">
             <section
             style={{ marginTop: `5rem`, marginBottom: `5rem` }}
             dangerouslySetInnerHTML={{ __html: post.html }}

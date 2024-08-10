@@ -12,6 +12,7 @@
     "@fontsource/merriweather": "^5.0.8",
     "@mdx-js/react": "^2.3.0",
     "@mediacurrent/gatsby-plugin-silence-css-order-warning": "^1.0.0",
+    "framer-motion": "^11.3.24",
     "gatsby": "^5.13.5",
     "gatsby-plugin-advanced-sitemap-v5": "^2.1.12",
     "gatsby-plugin-feed": "^5.13.1",

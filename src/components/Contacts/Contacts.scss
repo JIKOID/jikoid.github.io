@@ -1,0 +1,85 @@
+@import 'src/assets/scss/variables';
+
+.social_link {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.social_link a {
+    margin: 0.2rem;
+}
+
+.social_link a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-primary;
+    font-size: 0.8rem;
+}
+
+.social_link a div span{
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+    .social_link a {
+        margin: 0;
+    }
+
+    .social_link a div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .social_link a div svg {
+        margin-right: 0.5rem;
+    }
+}
+
+body.dark {
+    .social_link {
+        display: flex;
+        font-size: 0.8rem;
+    }
+    
+    .social_link a {
+        margin: 0.2rem;
+    }
+    
+    .social_link a div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+    
+    .social_link a div span{
+        text-transform: capitalize;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .social_link a {
+            margin: 0;
+        }
+    
+        .social_link a div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.8rem;
+            font-size: 0.8rem;
+        }
+    
+        .social_link a div svg {
+            margin-right: 0.5rem;
+        }
+    }
+}

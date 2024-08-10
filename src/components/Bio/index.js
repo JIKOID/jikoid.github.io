@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Contacts from "../Contacts"
 
-import * as styles from "./Bio.module.scss"
+import "./Bio.scss"
 
 
 const Bio = () => {
@@ -38,9 +38,9 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className={styles.bio}>
+    <div className="bio">
       <StaticImage
-        className={styles.bio_avatar}
+        className="bio_avatar"
         layout="fixed"
         formats={["auto", "webp", "avif", "png"]}
         src="../../images/avatar.png"

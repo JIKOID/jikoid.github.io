@@ -4,29 +4,12 @@ import { Link } from "gatsby"
 import Categories from "../../Categories"
 import NavToggle from "../HeaderHamburger"
 import Headroom from "headroom.js"
+import DarkModeToggle from "../../DarkModeToggle"
 
 import "./Header.scss"
 
 
 export default function Header({ location, title }) {
-    const rootPath = `${__PATH_PREFIX__}/`
-    const isRootPath = location.pathname === rootPath
-    let header
-
-    if (isRootPath) {
-        header = (
-        <h1 className="main_heading">
-            <Link to="/">{title}</Link>
-        </h1>
-        )
-    } else {
-        header = (
-        <h1 className="header_link_home">
-            <Link to="/">{title}</Link>
-        </h1>
-        )
-    }
-
     const headerRef = React.useRef();
     const headroom = React.useRef();
 
@@ -42,8 +25,12 @@ export default function Header({ location, title }) {
             <NavToggle />
 
             <div className="header_title">
-                {header}
+                <h1 className="main_heading">
+                    <Link to="/">{title}</Link>
+                </h1>
             </div>
+
+            <DarkModeToggle />
 
             <div className="headroom_nav">
                 <Categories location={location} />

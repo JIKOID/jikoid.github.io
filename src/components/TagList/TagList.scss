@@ -8,3 +8,11 @@
   display: inline-block;
   font-size: 0.6em;
 }
+
+body.dark {
+  .tag {
+    border: solid 1px white;
+    border-radius: 5px;
+    color: white;
+  }
+}

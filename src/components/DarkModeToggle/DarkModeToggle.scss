@@ -1,0 +1,20 @@
+.dark_mode_toggle button {
+    position: fixed;
+    top: 15px;          /* 화면 상단에서 20px 위치 */
+    right: 20px;        /* 화면 우측에서 20px 위치 */
+    z-index: 1000;      /* 다른 요소 위에 나타나도록 우선순위 설정 */
+    border: none;       /* 기본 버튼 테두리 제거 */
+    font-size: 20px;    /* 버튼 크기 조정 */
+    padding: 10px;      /* 버튼 패딩 */
+    border-radius: 50%; /* 버튼을 원형으로 설정 */
+    cursor: pointer;    /* 커서 모양 변경 */
+    background: transparent;
+}
+
+body.dark .dark_mode_toggle button {
+    color: white;      /* 다크 모드에서 버튼 아이콘 색상을 흰색으로 */
+    background: transparent;
+    border-radius: 50%; /* 버튼을 원형으로 설정 */
+    will-change: transform;
+    transition: transform 200ms ease-out;
+}

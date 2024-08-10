@@ -36,7 +36,6 @@
 
 .article_categories {
   margin: $spacing-2 $spacing-0;
-  color: $color-primary;
   font-size: 10px;
 }
 
@@ -47,5 +46,24 @@
   svg {
     vertical-align: text-top;
     font-size: 12px;
+  }
+}
+
+body.dark {
+  .post_list_item {
+    margin-bottom: $spacing-8;
+    margin-top: $spacing-8;
+    padding: $spacing-8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background-color: rgb(36, 36, 36);
+  }
+
+  .post_list_item header a:hover span {
+    text-shadow: 0 0 20px white;
+  }
+  
+  .post_list_item span a:hover {
+    text-shadow: 0 0 5px white;
   }
 }

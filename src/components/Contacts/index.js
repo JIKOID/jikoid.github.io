@@ -4,7 +4,7 @@ import getSocialLink from "../../utils/getSocialLink"
 import Icon from "../Icon"
 import getIcon from "../../utils/getIcons"
 
-import * as styles from "./Contacts.module.scss"
+import "./Contacts.scss"
 
 
 
@@ -14,7 +14,7 @@ export default function Contacts({ social }) {
     }
 
     return (
-        <div className={styles.social_link}>
+        <div className="social_link">
             {Object.entries(social).map(([name, user]) => (
                 <a href={getSocialLink(name, user)} target="_blank" rel="noreferrer" key={name} style={{
                     textDecoration: "none",

@@ -168,7 +168,6 @@
 
 .article_categories {
   margin: $spacing-2 $spacing-0;
-  color: $color-primary;
   font-size: 10px;
 }
 
@@ -179,4 +178,19 @@
     vertical-align: text-top;
     font-size: 14px;
   }
+}
+
+body.dark {
+  .post_header {
+    border-block: 2px solid white;
+    padding: 1rem;
+    word-break: break-all;
+  }
+
+  .previous_link, .next_link {
+    background-color: rgb(36, 36, 36);
+    border: $color-primary; /* Fixed the missing border size */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(250, 250, 250, 0.1);
+}
 }

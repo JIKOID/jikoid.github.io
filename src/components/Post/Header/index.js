@@ -2,9 +2,9 @@ import * as React from "react"
 import { Link } from "gatsby"
 import TagList from "../../TagList"
 import parsedCategories from "../../../utils/parsedCategories"
-import * as styles from "../Post.module.scss"
 import { GoClock } from "react-icons/go";
 import { IoFolderOpenOutline } from "react-icons/io5";
+import "../Post.scss"
 
 
 export default function Header({ title, date, author, tags, timeToRead, categories }) {
@@ -14,24 +14,23 @@ export default function Header({ title, date, author, tags, timeToRead, categori
     const subCategoryUrl = `/${categories}`
     
     return (
-        <header className={styles.post_header}>
+        <header className="post_header">
+          <div className="article_categories">
           {subCategory ? 
-            <div className={styles.article_categories}>
-                <span>
-                  <Link to={mainCategoryUrl} itemProp="url">{parsedCategories(mainCategory)}</Link>
-                  {" ﹥ "}
-                  <Link to={subCategoryUrl} itemProp="url">{parsedCategories(subCategory)}</Link>
-                </span>
-            </div>
+            <span>
+              <Link to={mainCategoryUrl} itemProp="url">{parsedCategories(mainCategory)}</Link>
+              {" ﹥ "}
+              <Link to={subCategoryUrl} itemProp="url">{parsedCategories(subCategory)}</Link>
+            </span>
           :
-            <div className={styles.article_categories}>
-                <span>
-                    <Link to={mainCategoryUrl}>{mainCategory}</Link>
-                </span>
-            </div>
+            <span>
+                <Link to={mainCategoryUrl}>{mainCategory}</Link>
+            </span>
           }
+          </div>
+
           <h1 itemProp="headline">{title}</h1>
-          <div className={styles.post_utils}>
+          <div className="post_utils">
             <b>@{author}</b> · <IoFolderOpenOutline /> <span> {date}</span> · <GoClock /> <span>{timeToRead}분</span>
           </div>
           <TagList tags={tags} />

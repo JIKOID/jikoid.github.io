@@ -15,14 +15,12 @@ html {
   font-size: $fontSize-root;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
 }
 
 body {
   font-family: $font-body;
   font-size: $fontSize-1;
   color: $color-text;
-  height: 100%;
 }
 
 #wrap {
@@ -210,5 +208,50 @@ a:focus {
   ul,
   ol {
     list-style-position: inside;
+  }
+}
+
+body.dark {
+  --bg-color: #181818;
+  --text-color: white;
+  --heading-color: #e0e0e0;
+  --link-color: white;
+  --blockquote-border-color: #bdbdbd;
+  --blockquote-text-color: #e0e0e0;
+  --table-border-color: #424242;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+  }
+
+  blockquote {
+    color: var(--blockquote-text-color);
+    border-left-color: var(--blockquote-border-color);
+  }
+  
+  table thead tr th {
+    border-bottom-color: var(--table-border-color);
+  }
+  
+  hr {
+    background: var(--table-border-color);
+  }
+  
+  /* Additional dark mode specific styles */
+  .gatsby-highlight {
+    background-color: #333;
+    color: #f8f8f2;
   }
 }

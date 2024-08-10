@@ -1,20 +1,27 @@
-import * as React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./utterances.scss";
 
 const Utterances = () => {
-    const rootElm = React.useRef(null);
-    const [status, setStatus] = React.useState("pending");
+    const rootElm = useRef(null);
+    const [status, setStatus] = useState("pending");
+    const [utterancesTheme, setUtterancesTheme] = useState("github-light");
 
-    const currentTheme = localStorage.getItem('theme');
-    const utterancesTheme = currentTheme === window.__DARK ? "github-dark" : "github-light";
+    // 클라이언트 사이드에서만 테마 설정
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const currentTheme = localStorage.getItem('theme');
+            const theme = currentTheme === window.__DARK ? "github-dark" : "github-light";
+            setUtterancesTheme(theme);
+        }
+    }, []);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const script = document.createElement("script");
         script.src = "https://utteranc.es/client.js";
         script.async = true;
         script.setAttribute("repo", "JIKOID/blog-comments");
         script.setAttribute("issue-term", "pathname");
-        script.setAttribute("theme", utterancesTheme); // 테마 설정
+        script.setAttribute("theme", utterancesTheme);
         script.setAttribute("crossorigin", "anonymous");
         script.setAttribute("label", "comment :speech_balloon:");
         script.onload = () => setStatus("success");
@@ -28,7 +35,7 @@ const Utterances = () => {
                 currentRootElm.innerHTML = ''; // Cleanup script on component unmount
             }
         };
-    }, [utterancesTheme]); // `utterancesTheme`을 의존성 배열에 추가
+    }, [utterancesTheme]);
 
     return (
         <div className="comments_wrapper">

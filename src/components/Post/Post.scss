@@ -192,5 +192,9 @@ body.dark {
     border: $color-primary; /* Fixed the missing border size */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(250, 250, 250, 0.1);
-}
+  }
+
+  .post_header span a:hover {
+    text-shadow: 0 0 5px white;
+  }
 }

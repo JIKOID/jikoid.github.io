@@ -212,7 +212,6 @@ a:focus {
 }
 
 body.dark {
-  --bg-color: #181818;
   --text-color: white;
   --heading-color: #e0e0e0;
   --link-color: white;
@@ -220,7 +219,7 @@ body.dark {
   --blockquote-text-color: #e0e0e0;
   --table-border-color: #424242;
 
-  background-color: var(--bg-color);
+  background-color: $dark-backgroud-color;
   color: var(--text-color);
 
   h1,

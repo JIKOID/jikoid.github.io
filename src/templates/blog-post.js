@@ -9,7 +9,7 @@ import Header from "../components/Post/Header"
 import Content from "../components/Post/Content"
 import Navigation from "../components/Post/Navigation"
 import Footer from "../components/Post/Footer"
-import Utterances from "../components/Utterances"
+import Comments from "../components/Comments"
 
 const BlogPostTemplate = ({data, location, pageContext}) => {
   const post = data.markdownRemark
@@ -35,7 +35,7 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
         <Navigation previous={previous} next={next} />
         <Footer />
       </article>
-      <Utterances />
+      <Comments />
     </Layout>
   )
 }

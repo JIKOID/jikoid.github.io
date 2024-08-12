@@ -18,6 +18,7 @@ exports.onRenderBody = ({ setPreBodyComponents, setHtmlAttributes }) => {
   const savedTheme = localStorage.getItem('theme');
 
   window.__theme = savedTheme || (darkQuery.matches ? window.__DARK : window.__LIGHT);
+  window.__onThemeChange = () => {};
 
   window.__setTheme = (newTheme) => {
     if (newTheme === window.__DARK) {
@@ -27,6 +28,7 @@ exports.onRenderBody = ({ setPreBodyComponents, setHtmlAttributes }) => {
     }
     localStorage.setItem('theme', newTheme);
     window.__theme = newTheme;
+    window.__onThemeChange(newTheme);
   };
 
   darkQuery.addListener((e) => {

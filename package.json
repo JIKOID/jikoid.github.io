@@ -10,6 +10,7 @@
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.17",
     "@fontsource/merriweather": "^5.0.8",
+    "@giscus/react": "^3.0.0",
     "@mdx-js/react": "^2.3.0",
     "@mediacurrent/gatsby-plugin-silence-css-order-warning": "^1.0.0",
     "framer-motion": "^11.3.24",

@@ -10,49 +10,26 @@ const ThemeIcon = {
 export default function DarkModeToggle() {
     const [theme, setTheme] = useState(null);
 
-    // 클라이언트 사이드에서만 `window`와 `localStorage`에 접근
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const savedTheme = localStorage.getItem('theme');
-            setTheme(savedTheme || window.__theme);
-        }
-    }, []);
+	let isDarkMode = false;
+	if (typeof window !== 'undefined')
+		isDarkMode = theme === window.__DARK;
 
-    // 클라이언트 사이드에서만 테마 변환 처리
-    const onClickDarkModeButton = useCallback(() => {
-        if (typeof window !== 'undefined') {
-            const isDarkMode = theme === window.__DARK;
-            const newTheme = isDarkMode ? window.__LIGHT : window.__DARK;
-            window.__setTheme(newTheme);
-            setTheme(newTheme);
-        }
-    }, [theme]);
+	const onClickDarkModeButton = useCallback(() => {
+		const newTheme = isDarkMode ? window.__LIGHT : window.__DARK;
+		window.__setTheme(newTheme);
+		setTheme(newTheme);
+	}, [isDarkMode]);
 
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const isDarkMode = theme === window.__DARK;
-            const isUtterances = document.querySelector('iframe.utterances-frame');
+	useEffect(() => {
+		setTheme(window.__theme);
+	}, []);
 
-            if (isUtterances) {
-                const utterancesTheme = isDarkMode ? "github-dark" : "github-light";
-                const utterancesEl = document.querySelector('iframe.utterances-frame');
-
-                utterancesEl?.contentWindow?.postMessage(
-                    {
-                        type: "set-theme",
-                        theme: utterancesTheme
-                    },
-                    "https://utteranc.es/"
-                );
-            }
-        }
-    }, [theme]);
-
+	if (!theme) {
+		return null;
+	}
     if (theme === null) {
         return null;
     }
-
-    const isDarkMode = theme === window.__DARK;
 
     return (
         <div className="dark_mode_toggle">

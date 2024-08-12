@@ -1,5 +1,5 @@
 ---
-date: "2024-07-05"
+date: "2024-07-05 16:22"
 title: "Leetcode 2771. Longest Non-decreasing Subarray From Two Arrays (Python3)"
 description: "😤 Leetcode 2771. Longest Non-decreasing Subarray From Two Arrays Python 문제 풀이"
 categories: algorithm/leetcode

@@ -191,23 +191,54 @@ module.exports = {
     },
     // sitemap
     {
-      resolve: `gatsby-plugin-advanced-sitemap-v5`,
+      resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: [
-          `/dev-404-page`, 
-          `/404`, 
-          `/404.html`,
-          `/dev-404-page.html`, 
-          `/using-typescript/`,
-        ],
-        createLinkInHead: true,
-      },
-    },
+        query: `{
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+          allMarkdownRemark {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+              }
+            }
+          }
+        }`,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage: { edges: allPages } }) => {
+          return allPages.map((page) => {
+            return { 
+              ...page.node, 
+              path: page.node.path
+            }
+          })
+        },
+        serializer: ({ path }) => {
+          return {
+            url: path,
+            changefreq: 'daily',
+            priority: 0.7,
+          }
+        },
+      }
+    },    
     // robots.txt
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://jikoid.github.io/sitemap-pages.xml`,
+        sitemap: `https://jikoid.github.io/sitemap-0.xml`,
         policy: [{ 
           userAgent: '*', 
           allow: '/',

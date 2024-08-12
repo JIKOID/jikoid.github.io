@@ -1,5 +1,5 @@
 ---
-date: "2024-07-19"
+date: "2024-07-19 12:11"
 title: "Leetcode 402. Remove K Digits (Python3)"
 description: "😤 Leetcode 402. Remove K Digits 문제 풀이"
 categories: algorithm/leetcode

@@ -1,5 +1,5 @@
 ---
-date: "2024-07-04"
+date: "2024-07-04 15:12"
 title: "Leetcode 1497. Check If Array Pairs Are Divisible by k (Python3)"
 description: "😤 Leetcode 1497. Check If Array Pairs Are Divisible by k 문제 풀이"
 categories: algorithm/leetcode

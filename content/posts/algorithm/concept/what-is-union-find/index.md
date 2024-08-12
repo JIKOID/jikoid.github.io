@@ -1,5 +1,5 @@
 ---
-date: "2024-07-17"
+date: "2024-07-17 00:00"
 title: "Union-Find 알고리즘 이해하기"
 description: "Union-Find 알고리즘에 대해서 공부하고 정리한 내용입니다."
 categories: algorithm/concept

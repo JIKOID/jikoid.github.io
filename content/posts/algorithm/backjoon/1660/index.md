@@ -1,5 +1,5 @@
 ---
-date: "2024-07-27"
+date: "2024-07-27 00:00"
 title: "Backjoon 16600번 구간 합 구하기 5 (Python3)"
 description: "😤 Backjoon 16600번 구간 합 구하기 5 문제 풀이"
 categories: algorithm/backjoon

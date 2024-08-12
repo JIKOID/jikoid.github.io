@@ -1,5 +1,5 @@
 ---
-date: "2024-07-12"
+date: "2024-07-12 12:14"
 title: "Leetcode 1191. K-Concatenation Maximum Sum (Python3)"
 description: "😤 Leetcode 1191. K-Concatenation Maximum Sum 문제 풀이"
 categories: algorithm/leetcode

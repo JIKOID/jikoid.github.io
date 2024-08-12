@@ -11,10 +11,13 @@ export default function DarkModeToggle() {
     const [theme, setTheme] = useState(null);
 
     useEffect(() => {
-		setTheme(window.__theme);
+        if (typeof window !== "undefined") {
+		    setTheme(window.__theme);
+        }
 	}, []);
 
-    const isDarkMode = theme === window.__DARK;
+    // Check if we are in the browser before using window
+    const isDarkMode = typeof window !== "undefined" && theme === window.__DARK;
 
 	const onClickDarkModeButton = useCallback(() => {
 		const newTheme = isDarkMode ? window.__LIGHT : window.__DARK;

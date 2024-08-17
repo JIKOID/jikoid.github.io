@@ -238,7 +238,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://jikoid.github.io/sitemap-0.xml`,
+        sitemap: `https://jikoid.github.io/sitemap-index.xml`,
         policy: [{ 
           userAgent: '*', 
           allow: '/',

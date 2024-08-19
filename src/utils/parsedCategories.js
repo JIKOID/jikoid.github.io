@@ -35,6 +35,9 @@ const parsedCategories = (category) => {
         case 'programming-language':
             parsed_category = '프로그래밍 언어';
             break;
+        case 'books':
+            parsed_category = '도서'; 
+            break;
         default:
             parsed_category = category;
             break;

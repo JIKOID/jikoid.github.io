@@ -31,7 +31,7 @@ const Article = ({ slug, title, date, timeToRead, description, excerpt, tags, ca
                     </span>
                 :
                     <span>
-                        <Link to={mainCategoryUrl}>{mainCategory}</Link>
+                        <Link to={mainCategoryUrl}>{parsedCategories(mainCategory)}</Link>
                     </span>
                 }
                 </div>

@@ -24,7 +24,7 @@ export default function Header({ title, date, author, tags, timeToRead, categori
             </span>
           :
             <span>
-                <Link to={mainCategoryUrl}>{mainCategory}</Link>
+                <Link to={mainCategoryUrl}>{parsedCategories(mainCategory)}</Link>
             </span>
           }
           </div>

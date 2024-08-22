@@ -21,6 +21,8 @@ const Layout = ({ location, title, children, toc }) => {
         <div className="content_wrapper" data-is-root-path={isRootPath}>
           <main >{children}</main>
         </div>
+
+        {/* ToC in Post */}
         {
           toc ? 
             <div className="right_sidebar">

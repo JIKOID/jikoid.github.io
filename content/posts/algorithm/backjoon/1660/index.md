@@ -1,6 +1,6 @@
 ---
 date: "2024-07-27 00:00"
-title: "Backjoon 16600번 구간 합 구하기 5 (Python3)"
+title: "Backjoon 16600. 구간 합 구하기 5 (Python3)"
 description: "😤 Backjoon 16600번 구간 합 구하기 5 문제 풀이"
 categories: algorithm/backjoon
 tags: ["problem_solving", "backjoon", "backjoon 16600", "실버 1", "python"]

@@ -7,15 +7,21 @@ const parsedCategories = (category) => {
      * 
      * algorithm: 알고리즘
      * - concept: 개념정리
+     * - programmers: 프로그래머스
      * blog: 블로그
      * jaylog: 제이로그
      * - interview: 면접후기
      * - retrospective: 회고
+     * programming-language: 프로그래밍 언어
+     * books: 도서
      */
 
     switch (category) {
         case 'algorithm':
             parsed_category = '알고리즘';
+            break;
+        case 'programmers':
+            parsed_category = '프로그래머스';
             break;
         case 'concept':
             parsed_category = '개념정리';

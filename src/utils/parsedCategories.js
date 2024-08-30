@@ -44,6 +44,9 @@ const parsedCategories = (category) => {
         case 'books':
             parsed_category = '도서'; 
             break;
+        case 'data-engineering':
+            parsed_category = '데이터 엔지니어링';
+            break;
         default:
             parsed_category = category;
             break;

@@ -57,6 +57,8 @@ const Seo = ({ description, title, children }) => {
         <meta name="google-adsense-account" content="ca-pub-4021090588937253" />
       </Helmet>
 
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4021090588937253" crossorigin="anonymous" />
+
       {children}
     </>
   )

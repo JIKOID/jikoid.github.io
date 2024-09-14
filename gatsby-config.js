@@ -199,7 +199,6 @@ module.exports = {
           `/404.html`,
           `/dev-404-page.html`, 
           `/using-typescript/`,
-          `/page-data/`,
         ],
       },
     },
